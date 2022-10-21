@@ -1,0 +1,46 @@
+.....:::::-----rol de trabajos a implementar al proyecto-----:::::.....
+Codgios:
+	LISTO==>>> 1==>> validar los catalogos que no reciban valores duplicados.
+	LISTO==>>> 2==>> el rol "crear nuevo usuario" del administrador desde la pantalla registrarse
+			se le agrego la opcion de que el usuariosea guardado en la DB y el catalogo ya no se procesaria.
+	LISTO==>>> 3==>> funcinalidad del modulo venta, validar la venta cuando es en moneda nacional o dolar.
+	LISTO==>>> 4==>> generar reportes x dia, semnal, quincenal, mensual...
+	5==>> grid dar de baja, grid eliminar....
+	DE SER NECESARIO 6==>> Compra realizada a proveedor
+	DE SER NECESARIO 7==>> sistema de apartado
+	lUEGO==>> 8==>> prestamo de dinero
+	9==>> imprimir factura
+	LISTO==>> 10==>> revisar la paginacion de la grid o ubicarle un scrool para una mejor visualizacion
+	FALTAN ALGUNOS ==>> 11==>> mejorar las validaciones de los textbox.
+	LISTO==>>> 12==>> revisar la parte d q al selecciones un imagen se muestra en el navegador.
+	LISTO==>> 13==>> ponerle una foto a cada ususario para que se visualice en el navegador 
+		junto a su nombre y apellido y el label de 'Bienvenid@'.
+	14==>> boton subir para evitar el scrolleo (como el de marvin)
+	LISTO==>> 15==>> revisar las alertas: literalmensaje y literal eliminar que se visualicen en un lugar fijo
+		en cada catalogo al momento de realizar cualquier funcion
+	LISTO==>> 16==>> terminar de validar los ultimos campos de los catalogos...
+	17==>> el logo de la imagen que me redirija a la informacion de la empresa y ahi que sea posible
+		cambiar info acerca de la empresa si es necesario esto solo el administrador lo podra hacer.
+	18==>> crear un aspx con la configuracionde la empresa la cual el administrador cada ves que la ingrese la puede cambiar 
+		de ser necesario.
+	19==>>	
+	20==>>
+	
+Importante:
+	1==>> realizar la conexion con la nueva DB
+	2==>> buscar al profesor y que nos de sugerencia acerca de la DB en cuanto a mejorarla
+		antes de la predefensa.
+
+Diseño:
+	TRABAJANDO==>>> 1==>> revisar los css y cambiar los colores de la pantalla
+	LISTO==>>> 2==>> quitar el scroll de la parte de abajo
+	ALGO SIMILAR QUEDO 3==>> el login dejarlo como inicio de sesion de gmail
+	4==>> diseñar de manera mas grafica el inicio, los productos y sus detalles...
+	5==>> trabajar la parte del footer, la pagina de inicio...
+	LISTO==>> 6==>> agrandar y dejar un tamaño estandar de la fuentes que contemplara el sistema
+	7==>> visualizar otros tipos de fondos, aparte del blanco que tiene x defecto.
+	NO PUDE==>> 8==>> al loginstatus darle mas diseño
+	TRABAJANDO 9==>> revisar todo el sistema en cuanto a la ortografia.
+	LISTO==>>> 10==>> en la pagina de inicio en ves de que el artic aparezca con su proveedor y sus estado
+		es posible que se pueda mostrar una info acerca del mismo, o hacerlo en detallearticulo
+	11==>>

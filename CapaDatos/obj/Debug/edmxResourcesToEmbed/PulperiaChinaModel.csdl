@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Pulperia_ChinaModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Pulperia_ChinaEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="sysdiagrams" EntityType="Pulperia_ChinaModel.sysdiagrams" />
+    <EntitySet Name="tblArticulo" EntityType="Pulperia_ChinaModel.tblArticulo" />
+    <EntitySet Name="tblCategoria" EntityType="Pulperia_ChinaModel.tblCategoria" />
+    <EntitySet Name="tblCliente" EntityType="Pulperia_ChinaModel.tblCliente" />
+    <EntitySet Name="tblCompra" EntityType="Pulperia_ChinaModel.tblCompra" />
+    <EntitySet Name="tblDepartamento" EntityType="Pulperia_ChinaModel.tblDepartamento" />
+    <EntitySet Name="tblDetalleVenta" EntityType="Pulperia_ChinaModel.tblDetalleVenta" />
+    <EntitySet Name="tblMunicipio" EntityType="Pulperia_ChinaModel.tblMunicipio" />
+    <EntitySet Name="tblProveedor" EntityType="Pulperia_ChinaModel.tblProveedor" />
+    <EntitySet Name="tblUsuario" EntityType="Pulperia_ChinaModel.tblUsuario" />
+    <EntitySet Name="tblVenta" EntityType="Pulperia_ChinaModel.tblVenta" />
+    <EntitySet Name="tblVentaCredito" EntityType="Pulperia_ChinaModel.tblVentaCredito" />
+    <AssociationSet Name="FK_tblArticulo_tblCategoria" Association="Pulperia_ChinaModel.FK_tblArticulo_tblCategoria">
+      <End Role="tblCategoria" EntitySet="tblCategoria" />
+      <End Role="tblArticulo" EntitySet="tblArticulo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblArticulo_tblProveedor" Association="Pulperia_ChinaModel.FK_tblArticulo_tblProveedor">
+      <End Role="tblProveedor" EntitySet="tblProveedor" />
+      <End Role="tblArticulo" EntitySet="tblArticulo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblDetalleVenta_tblArticulo" Association="Pulperia_ChinaModel.FK_tblDetalleVenta_tblArticulo">
+      <End Role="tblArticulo" EntitySet="tblArticulo" />
+      <End Role="tblDetalleVenta" EntitySet="tblDetalleVenta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblCliente_tblMunicipio" Association="Pulperia_ChinaModel.FK_tblCliente_tblMunicipio">
+      <End Role="tblMunicipio" EntitySet="tblMunicipio" />
+      <End Role="tblCliente" EntitySet="tblCliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblVenta_tblCliente" Association="Pulperia_ChinaModel.FK_tblVenta_tblCliente">
+      <End Role="tblCliente" EntitySet="tblCliente" />
+      <End Role="tblVenta" EntitySet="tblVenta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblVentaCredito_tblCliente" Association="Pulperia_ChinaModel.FK_tblVentaCredito_tblCliente">
+      <End Role="tblCliente" EntitySet="tblCliente" />
+      <End Role="tblVentaCredito" EntitySet="tblVentaCredito" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblCompra_tblProveedor" Association="Pulperia_ChinaModel.FK_tblCompra_tblProveedor">
+      <End Role="tblProveedor" EntitySet="tblProveedor" />
+      <End Role="tblCompra" EntitySet="tblCompra" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblMunicipio_tblDepartamento" Association="Pulperia_ChinaModel.FK_tblMunicipio_tblDepartamento">
+      <End Role="tblDepartamento" EntitySet="tblDepartamento" />
+      <End Role="tblMunicipio" EntitySet="tblMunicipio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblDetalleVenta_tblVenta" Association="Pulperia_ChinaModel.FK_tblDetalleVenta_tblVenta">
+      <End Role="tblVenta" EntitySet="tblVenta" />
+      <End Role="tblDetalleVenta" EntitySet="tblDetalleVenta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblVenta_tblUsuario" Association="Pulperia_ChinaModel.FK_tblVenta_tblUsuario">
+      <End Role="tblUsuario" EntitySet="tblUsuario" />
+      <End Role="tblVenta" EntitySet="tblVenta" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tblArticulo">
+    <Key>
+      <PropertyRef Name="ID_Articulo" />
+    </Key>
+    <Property Name="ID_Articulo" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Articulo" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="Precio" Type="Int32" />
+    <Property Name="ID_Categoria" Type="Int32" />
+    <Property Name="ID_Proveedor" Type="Int32" />
+    <Property Name="Activo" Type="String" MaxLength="60" Unicode="true" FixedLength="false" />
+    <Property Name="RutaImagen" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="tblCategoria" Relationship="Pulperia_ChinaModel.FK_tblArticulo_tblCategoria" FromRole="tblArticulo" ToRole="tblCategoria" />
+    <NavigationProperty Name="tblProveedor" Relationship="Pulperia_ChinaModel.FK_tblArticulo_tblProveedor" FromRole="tblArticulo" ToRole="tblProveedor" />
+    <NavigationProperty Name="tblDetalleVenta" Relationship="Pulperia_ChinaModel.FK_tblDetalleVenta_tblArticulo" FromRole="tblArticulo" ToRole="tblDetalleVenta" />
+  </EntityType>
+  <EntityType Name="tblCategoria">
+    <Key>
+      <PropertyRef Name="ID_Categoria" />
+    </Key>
+    <Property Name="ID_Categoria" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Categoria" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="Descripcion_Categoria" Type="String" MaxLength="60" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="tblArticulo" Relationship="Pulperia_ChinaModel.FK_tblArticulo_tblCategoria" FromRole="tblCategoria" ToRole="tblArticulo" />
+  </EntityType>
+  <EntityType Name="tblCliente">
+    <Key>
+      <PropertyRef Name="ID_Cliente" />
+    </Key>
+    <Property Name="ID_Cliente" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Cliente" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="Apellido1_Cliente" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="Direccion" Type="String" MaxLength="60" Unicode="true" FixedLength="false" />
+    <Property Name="N__de_Cedula" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="Telefono_Celular" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Estado" Type="Boolean" />
+    <Property Name="ID_Municipio" Type="Int32" />
+    <Property Name="Lìmite" Type="Double" />
+    <Property Name="UserName" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="tblMunicipio" Relationship="Pulperia_ChinaModel.FK_tblCliente_tblMunicipio" FromRole="tblCliente" ToRole="tblMunicipio" />
+    <NavigationProperty Name="tblVenta" Relationship="Pulperia_ChinaModel.FK_tblVenta_tblCliente" FromRole="tblCliente" ToRole="tblVenta" />
+    <NavigationProperty Name="tblVentaCredito" Relationship="Pulperia_ChinaModel.FK_tblVentaCredito_tblCliente" FromRole="tblCliente" ToRole="tblVentaCredito" />
+  </EntityType>
+  <EntityType Name="tblCompra">
+    <Key>
+      <PropertyRef Name="ID_Compra" />
+    </Key>
+    <Property Name="ID_Compra" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Fecha_Compra" Type="DateTime" Precision="3" />
+    <Property Name="Descripcion_Articulo" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Pendiente_Aprobacion" Type="String" MaxLength="60" Unicode="true" FixedLength="false" />
+    <Property Name="ID_Proveedor" Type="Int32" />
+    <NavigationProperty Name="tblProveedor" Relationship="Pulperia_ChinaModel.FK_tblCompra_tblProveedor" FromRole="tblCompra" ToRole="tblProveedor" />
+  </EntityType>
+  <EntityType Name="tblDepartamento">
+    <Key>
+      <PropertyRef Name="ID_Departamento" />
+    </Key>
+    <Property Name="ID_Departamento" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Depto" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="tblMunicipio" Relationship="Pulperia_ChinaModel.FK_tblMunicipio_tblDepartamento" FromRole="tblDepartamento" ToRole="tblMunicipio" />
+  </EntityType>
+  <EntityType Name="tblDetalleVenta">
+    <Key>
+      <PropertyRef Name="ID_DetalleVenta" />
+    </Key>
+    <Property Name="ID_DetalleVenta" Type="Int32" Nullable="false" />
+    <Property Name="ID_Articulo" Type="Int32" />
+    <Property Name="ID_Venta" Type="Int32" />
+    <Property Name="Cantidad" Type="Int32" />
+    <Property Name="Precio" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="IVA" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <NavigationProperty Name="tblArticulo" Relationship="Pulperia_ChinaModel.FK_tblDetalleVenta_tblArticulo" FromRole="tblDetalleVenta" ToRole="tblArticulo" />
+    <NavigationProperty Name="tblVenta" Relationship="Pulperia_ChinaModel.FK_tblDetalleVenta_tblVenta" FromRole="tblDetalleVenta" ToRole="tblVenta" />
+  </EntityType>
+  <EntityType Name="tblMunicipio">
+    <Key>
+      <PropertyRef Name="ID_Municipio" />
+    </Key>
+    <Property Name="ID_Municipio" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Municipio" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="ID_Departamento" Type="Int32" />
+    <NavigationProperty Name="tblCliente" Relationship="Pulperia_ChinaModel.FK_tblCliente_tblMunicipio" FromRole="tblMunicipio" ToRole="tblCliente" />
+    <NavigationProperty Name="tblDepartamento" Relationship="Pulperia_ChinaModel.FK_tblMunicipio_tblDepartamento" FromRole="tblMunicipio" ToRole="tblDepartamento" />
+  </EntityType>
+  <EntityType Name="tblProveedor">
+    <Key>
+      <PropertyRef Name="ID_Proveedor" />
+    </Key>
+    <Property Name="ID_Proveedor" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Proveedor" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Telefono" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Direccion" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="tblArticulo" Relationship="Pulperia_ChinaModel.FK_tblArticulo_tblProveedor" FromRole="tblProveedor" ToRole="tblArticulo" />
+    <NavigationProperty Name="tblCompra" Relationship="Pulperia_ChinaModel.FK_tblCompra_tblProveedor" FromRole="tblProveedor" ToRole="tblCompra" />
+  </EntityType>
+  <EntityType Name="tblUsuario">
+    <Key>
+      <PropertyRef Name="ID_Usuario" />
+    </Key>
+    <Property Name="ID_Usuario" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Contraseña" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="Nombre" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="Apellido" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="UserName" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="Tipo_Usuario" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="tblVenta" Relationship="Pulperia_ChinaModel.FK_tblVenta_tblUsuario" FromRole="tblUsuario" ToRole="tblVenta" />
+  </EntityType>
+  <EntityType Name="tblVenta">
+    <Key>
+      <PropertyRef Name="ID_Venta" />
+    </Key>
+    <Property Name="ID_Venta" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Fecha_Vta" Type="DateTime" Precision="3" />
+    <Property Name="ID_Cliente" Type="Int32" />
+    <Property Name="ID_Usuario" Type="Int32" />
+    <Property Name="Anulada" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="tblCliente" Relationship="Pulperia_ChinaModel.FK_tblVenta_tblCliente" FromRole="tblVenta" ToRole="tblCliente" />
+    <NavigationProperty Name="tblDetalleVenta" Relationship="Pulperia_ChinaModel.FK_tblDetalleVenta_tblVenta" FromRole="tblVenta" ToRole="tblDetalleVenta" />
+    <NavigationProperty Name="tblUsuario" Relationship="Pulperia_ChinaModel.FK_tblVenta_tblUsuario" FromRole="tblVenta" ToRole="tblUsuario" />
+  </EntityType>
+  <EntityType Name="tblVentaCredito">
+    <Key>
+      <PropertyRef Name="ID_VentaCredito" />
+    </Key>
+    <Property Name="ID_VentaCredito" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_Cliente" Type="Int32" />
+    <Property Name="Feche_Venta" Type="DateTime" Precision="0" />
+    <Property Name="Plazos" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Prima" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="Interes" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="Fecha_Inicial" Type="DateTime" Precision="0" />
+    <Property Name="Saldo_Inicial" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="Saldo_Final" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+    <NavigationProperty Name="tblCliente" Relationship="Pulperia_ChinaModel.FK_tblVentaCredito_tblCliente" FromRole="tblVentaCredito" ToRole="tblCliente" />
+  </EntityType>
+  <Association Name="FK_tblArticulo_tblCategoria">
+    <End Role="tblCategoria" Type="Pulperia_ChinaModel.tblCategoria" Multiplicity="0..1" />
+    <End Role="tblArticulo" Type="Pulperia_ChinaModel.tblArticulo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCategoria">
+        <PropertyRef Name="ID_Categoria" />
+      </Principal>
+      <Dependent Role="tblArticulo">
+        <PropertyRef Name="ID_Categoria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblArticulo_tblProveedor">
+    <End Role="tblProveedor" Type="Pulperia_ChinaModel.tblProveedor" Multiplicity="0..1" />
+    <End Role="tblArticulo" Type="Pulperia_ChinaModel.tblArticulo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblProveedor">
+        <PropertyRef Name="ID_Proveedor" />
+      </Principal>
+      <Dependent Role="tblArticulo">
+        <PropertyRef Name="ID_Proveedor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblDetalleVenta_tblArticulo">
+    <End Role="tblArticulo" Type="Pulperia_ChinaModel.tblArticulo" Multiplicity="0..1" />
+    <End Role="tblDetalleVenta" Type="Pulperia_ChinaModel.tblDetalleVenta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblArticulo">
+        <PropertyRef Name="ID_Articulo" />
+      </Principal>
+      <Dependent Role="tblDetalleVenta">
+        <PropertyRef Name="ID_Articulo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblCliente_tblMunicipio">
+    <End Role="tblMunicipio" Type="Pulperia_ChinaModel.tblMunicipio" Multiplicity="0..1" />
+    <End Role="tblCliente" Type="Pulperia_ChinaModel.tblCliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblMunicipio">
+        <PropertyRef Name="ID_Municipio" />
+      </Principal>
+      <Dependent Role="tblCliente">
+        <PropertyRef Name="ID_Municipio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblVenta_tblCliente">
+    <End Role="tblCliente" Type="Pulperia_ChinaModel.tblCliente" Multiplicity="0..1" />
+    <End Role="tblVenta" Type="Pulperia_ChinaModel.tblVenta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCliente">
+        <PropertyRef Name="ID_Cliente" />
+      </Principal>
+      <Dependent Role="tblVenta">
+        <PropertyRef Name="ID_Cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblVentaCredito_tblCliente">
+    <End Role="tblCliente" Type="Pulperia_ChinaModel.tblCliente" Multiplicity="0..1" />
+    <End Role="tblVentaCredito" Type="Pulperia_ChinaModel.tblVentaCredito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCliente">
+        <PropertyRef Name="ID_Cliente" />
+      </Principal>
+      <Dependent Role="tblVentaCredito">
+        <PropertyRef Name="ID_Cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblCompra_tblProveedor">
+    <End Role="tblProveedor" Type="Pulperia_ChinaModel.tblProveedor" Multiplicity="0..1" />
+    <End Role="tblCompra" Type="Pulperia_ChinaModel.tblCompra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblProveedor">
+        <PropertyRef Name="ID_Proveedor" />
+      </Principal>
+      <Dependent Role="tblCompra">
+        <PropertyRef Name="ID_Proveedor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblMunicipio_tblDepartamento">
+    <End Role="tblDepartamento" Type="Pulperia_ChinaModel.tblDepartamento" Multiplicity="0..1" />
+    <End Role="tblMunicipio" Type="Pulperia_ChinaModel.tblMunicipio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblDepartamento">
+        <PropertyRef Name="ID_Departamento" />
+      </Principal>
+      <Dependent Role="tblMunicipio">
+        <PropertyRef Name="ID_Departamento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblDetalleVenta_tblVenta">
+    <End Role="tblVenta" Type="Pulperia_ChinaModel.tblVenta" Multiplicity="0..1" />
+    <End Role="tblDetalleVenta" Type="Pulperia_ChinaModel.tblDetalleVenta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblVenta">
+        <PropertyRef Name="ID_Venta" />
+      </Principal>
+      <Dependent Role="tblDetalleVenta">
+        <PropertyRef Name="ID_Venta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblVenta_tblUsuario">
+    <End Role="tblUsuario" Type="Pulperia_ChinaModel.tblUsuario" Multiplicity="0..1" />
+    <End Role="tblVenta" Type="Pulperia_ChinaModel.tblVenta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblUsuario">
+        <PropertyRef Name="ID_Usuario" />
+      </Principal>
+      <Dependent Role="tblVenta">
+        <PropertyRef Name="ID_Usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

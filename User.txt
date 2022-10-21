@@ -1,0 +1,19 @@
+Administrador
+	user: Eliezer
+	pass: eli1234%
+
+	user: Maria
+	pass: mar1234%
+
+	user: Manuel
+	pass: manu1234%
+Vendedor
+	user: Mercedes
+	pass: mer1234%
+
+	user: Raquel
+	pass: raq1234%
+
+registrarlo de nuevo:
+	user: Byron
+	pass: bird1234%

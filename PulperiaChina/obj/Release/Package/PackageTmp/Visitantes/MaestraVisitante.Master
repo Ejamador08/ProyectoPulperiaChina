@@ -1,0 +1,438 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MaestraVisitante.master.cs" Inherits="PulperiaChina.Visitantes.MaestraVisitante" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Pulperia China</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <%--<--apartir de aca se realizan las llamadas a los archivos css-->--%>
+    <!-- Bootstrap Core CSS -->
+    <link rel="shortcut icon" type="image/x-icon" href="../Imagenes/faviconAhora.ico" />
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <%--<link href="../Content/font-awesome.css" rel="stylesheet" />
+    <link href="../Content/font-awesome.min.css" rel="stylesheet" />--%>
+
+    <!-- validaciones para los textbox -->
+    <script src="../Scripts/Validaciones/Validaciones.js"></script>
+
+    <!-- Custom CSS -->
+    <link href="../Content/sb-admin.css" rel="stylesheet" />
+
+    <!-- Morris Charts CSS -->
+    <link href="../Content/morris.css" rel="stylesheet" />
+
+    <style type="text/css">
+        .pc {
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            margin-top: 5px;
+            margin-right: 3px;
+            margin-left: 5px;
+            float: left;
+        }
+
+        /*parte superior*/
+        .color {
+            background-color: #a34f9e;
+        }
+
+        /*esta es el texto superior izquierdo*/
+        .fuente {
+            color: #fff;
+        }
+
+        .navbar-inverse .navbar-brand:hover {
+            background-color: #b568b0;
+        }
+
+        .reloj {
+            margin-left:30%;
+        }
+
+        /*menu izquierdo*/
+        .collapse > .nav > li > a {
+            color: white;
+            font-size:18px;
+            background-color:#b568b0;
+        }
+
+            .collapse > .navbar-nav > li > a:hover {
+                color: white;
+                font-size:18px;
+                background-color:#a34f9e;
+            }
+
+
+            /*submenu*/
+        .side-nav > li > ul > li > a {
+            color: white;
+            font-size:18px;
+            background-color:#b568b0;
+        }
+
+        /*fondo del menu isq*/
+        .side-nav {
+            background-color:#b568b0;
+        }
+
+            /*texto superior derecho*/
+        .top-nav > li > a {
+            background-color: #a34f9e;
+            color:white;
+            font-size:18px;
+        }
+
+            .top-nav > li > a:hover {
+                background-color: #b568b0;
+            }
+
+        /*texto superior derecho*/
+            .top-nav > li > a:hover, .top-nav > li > a:focus, .top-nav > .open > a, .top-nav > .open > a:hover, .top-nav > .open > a:focus {
+                background-color: #b568b0;
+            }
+
+        .container > p {
+            font-size:15pt;
+            font-family:Arial, sans-serif;
+        }
+
+        #form1 {
+            height:100%;
+        }
+
+        .dropdown-menu > li{
+            padding:0;
+            margin:0;
+            background-color:#b568b0;
+        }
+
+        .dropdown-menu > li > a{   
+            color:white;
+            font-size:1em;
+        }
+    </style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div id="wrapper">
+
+            <!-- Navigation -->
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <img src="../Imagenes/logoPC.png" class="pc img-responsive" />
+                    <a class="navbar-brand" href="/Inicio">
+                        <p class="fuente">Pulpería China</p>
+                    </a>
+                </div>
+                <div class="reloj navbar-header">
+                        <script type="text/javascript">
+
+                            function reloj() {
+                                var hoy = new Date(); var h = hoy.getHours(); var m = hoy.getMinutes(); var s = hoy.getSeconds();
+                                m = actualizarHora(m); s = actualizarHora(s);
+                                document.getElementById('displayReloj').innerHTML = h + ":" + m + ":" + s;
+                                var t = setTimeout(function () { reloj() }, 500);
+                            }
+
+                            function actualizarHora(i) {
+                                if (i < 10) { i = "0" + i };  // Añadir el cero en números menores de 10
+                                return i;
+                            }
+                        </script>
+                        <body onload="reloj()" >
+                        <div style="text-align:center;">
+                        <div style="color:white; margin-left:30px; border:double; border-radius:10px ; font-family: verdana, arial; font-size:20px; padding:10px; width:90% " id ="displayReloj" >
+                        </div>
+                        </div>
+                        </body>
+                </div>
+                <!-- Top Menu Items -->
+                <asp:LoginView ID="LoginView1" runat="server">
+                    <LoggedInTemplate>
+                        <ul class="nav navbar-right top-nav">
+                            <li><a>
+                                    <asp:Image ID="ImgUser" CssClass="img-circle" Height="20" runat="server" />
+                                </a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bienvenid@:
+                                    <asp:Literal ID="LiteralUser" runat="server"></asp:Literal>
+                                    <%--<asp:LoginName ID="LoginName1" runat="server" />--%>
+                                    <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="../Cuenta/Login.aspx"><span class="glyphicon glyphicon-off"></span>
+                                            <asp:LoginStatus ID="LoginStatus1" runat="server" OnLoggingOut="LoginStatus1_LoggingOut" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </LoggedInTemplate>
+                </asp:LoginView>
+
+                <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+                <div class="color collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav side-nav">
+                        <li>
+                            <%-----realice el cambio a Inicio-----%>
+                            <a href="/Inicio" class="sobre"><i class=" glyphicon glyphicon-home"></i> Inicio</a>
+                        </li>
+                        <asp:LoginView ID="LoginView2" runat="server">
+                            <AnonymousTemplate>
+                                <li>
+                                    <a href="../Cuenta/Login.aspx"><i class="glyphicon glyphicon-play"></i> Iniciar Sesión</a>
+                                </li>
+                            </AnonymousTemplate>
+                        </asp:LoginView>
+
+                        <asp:LoginView ID="LoginView3" runat="server">
+                            <RoleGroups>
+                                <asp:RoleGroup Roles="Administrador">
+                                    <ContentTemplate>
+                                        <li>
+                                            <a href="../Cuenta/Registro.aspx"><i class="glyphicon glyphicon-asterisk"></i> Registrar Usuario</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" data-toggle="collapse" data-target="#demo">
+                                                <i class="glyphicon glyphicon-tasks"></i> Catálogos <i class="glyphicon glyphicon-menu-down"></i></a>
+                                            <ul id="demo" class="collapse">
+                                                <li>
+                                                    <a href="/Articulos"><i class="glyphicon glyphicon-tag"></i> Artículos</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Bodega"><i class="glyphicon glyphicon-backward"></i> Bodegas</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Categoria"><i class="glyphicon glyphicon-tasks"></i> Categorías</></a>
+                                                    <%--<a href="#">Dropdown Item</a>--%>
+                                                </li>
+                                                <li>
+                                                    <a href="/Cliente"><i class="glyphicon glyphicon-user"></i> Clientes</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Departamento"><i class="glyphicon glyphicon-globe"></i> Departamentos</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Empleado"><i class="glyphicon glyphicon-backward"></i> Empleados</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Marca"><i class="glyphicon glyphicon-backward"></i> Marcas</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Municipio"><i class="glyphicon glyphicon-record"></i> Municipios</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Proveedor"><i class="glyphicon glyphicon-star"></i> Proveedores</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ContentTemplate>
+                                </asp:RoleGroup>
+                            </RoleGroups>
+                        </asp:LoginView>
+                        <asp:LoginView ID="LoginView5" runat="server">
+                            <RoleGroups>
+                                <asp:RoleGroup Roles="Administrador">
+                                    <ContentTemplate>
+                                        <li>
+                                            <a href="/Bodegas_Articulos"><i class="glyphicon glyphicon-book"></i> Bodega_Artículo</a>
+                                        </li>
+                                        <li>
+                                            <a href="/Usuario"><i class=" glyphicon glyphicon-user"></i> Usuarios</a>
+                                        </li>
+                                    </ContentTemplate>
+                                </asp:RoleGroup>
+                            </RoleGroups>
+                        </asp:LoginView>
+                        <asp:LoginView ID="LoginView4" runat="server">
+                            <RoleGroups>
+                                <asp:RoleGroup Roles="Administrador, Vendedor">
+                                    <ContentTemplate>
+                                        <li>
+                                            <a href="javascript:;" data-toggle="collapse" data-target="#demost">
+                                                <i class="glyphicon glyphicon-tasks"></i> Facturación <i class="glyphicon glyphicon-menu-down"></i></a>
+                                            <ul id="demost" class="collapse">
+                                                <li>
+                                                    <a href="/Venta"><i class="glyphicon glyphicon-book"></i> Facturar</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Ventas/VentasRealizadas.aspx"><i class="glyphicon glyphicon-book"></i> Ver Facturas</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="/Ventas/FormCompra.aspx"><i class=" glyphicon glyphicon-home"></i> Entradas</a>
+                                        </li>
+                                    </ContentTemplate>
+                                </asp:RoleGroup>
+                            </RoleGroups>
+                        </asp:LoginView>
+                        <asp:LoginView ID="LoginView6" runat="server">
+                            <RoleGroups>
+                                <asp:RoleGroup Roles="Administrador">
+                                    <ContentTemplate>
+                                        <li>
+                                            <a href="javascript:;" data-toggle="collapse" data-target="#demos">
+                                                <i class="glyphicon glyphicon-tasks"></i> Reportes <i class="glyphicon glyphicon-menu-down"></i></a>
+                                            <ul id="demos" class="collapse">
+                                                <li>
+                                                    <a href="/Reporte_MasVendidos"><i class="glyphicon glyphicon-book"></i> Más Vendidos</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Reporte_VentasxFecha"><i class="glyphicon glyphicon-book"></i> Ventas Por Fecha</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Reportes/UltimosIngresados.aspx"><i class="glyphicon glyphicon-book"></i> Ingresos Por Fecha</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ContentTemplate>
+                                </asp:RoleGroup>
+                            </RoleGroups>
+                        </asp:LoginView>
+                        <%-- <li>
+                        <a href="blank-page.html"><i class="fa fa-fw fa-file"></i>Blank Page</a>
+                    </li>
+                    <li>
+                        <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i>RTL Dashboard</a>
+                    </li>--%>
+                        <%----aqui termina menu oculto-----%>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+            <!-- Navigation -->
+
+            <%--Banner--%>
+            <asp:ContentPlaceHolder ID="ContentPlaceSlider" runat="server">
+            </asp:ContentPlaceHolder>
+            <%--Banner--%>
+
+            <%-----ultimos Articulos y otros-----%>
+            <div id="page-wrapper">
+                <div class="container-fluid">
+                    <!--apartir de aca se cargan los formularios-->
+
+                    <%--SLIDER--%>
+                    <%--<asp:ContentPlaceHolder ID="ContentPlaceSlider" runat="server">
+                </asp:ContentPlaceHolder>--%>
+
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+            <!-- /#page-wrapper -->
+            <center>
+                     <footer class="container" style="color:white; background-color:#a34f9e; width:100%">
+                        <p>
+                            Copyright © <%=DateTime.Now.Year.ToString() %> FAREM-CARAZO
+                            <br />
+                            Ing. Eliecer Amador & Ing. Gabriel Palacios
+                            <br />
+                            Carazo, Nicaragua.</p>
+                    </footer>
+                  </center>
+            <%--footer--%>
+            <%--<footer>
+                <div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="container">
+                                <div class="col-md-3">
+                                    <h3 class="color-1" style="color: white; font-family:Arial;">Siguenos en: </h3>
+                                    <ul class="list-services" style="list-style: none; text-decoration: none;">
+                                        <li><a style="text-decoration: none; color: white;" target="_blank" href="#">Facebook </a></li>
+                                        <li><a style="text-decoration: none; color: white;" target="_blank" href="#">Twitter </a></li>
+                                        <li><a style="text-decoration: none; color: white;" target="_blank" href="#">Youtube </a></li>
+                                        <li><a style="text-decoration: none; color: white;" target="_blank" href="#">Instagran </a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-3" style="margin:0 20px;">
+                                    <h3 class="color-1" style="color: white">Ubicado: Las Esquinas, Diriamba </h3>
+                                    <p class="p3" style="color: white">Barrio Mauiricio Duarte Casa Nº 28 </p>
+                                    <p style="color: white; font-size: 17px; margin-top: -12px; margin-bottom: -12px">Telefono: 00000000 </p>
+                                    <h3 class="color-1" style="color: white">Horarios de atención</h3>
+                                    <p class="p3" style="color: white">De Lunes a Viernes de 7:30am a 5:30pm</p>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <center><h3 class="color-1" style="color: white;">Correos</h3></center>
+                                    <ul class="list-service" style="font-size: 16px; list-style: none;">
+                                        <li><a style="text-decoration: none; color: white;">PulperiaChinaNi@gmail.com</a></li>
+                                        <li><a style="text-decoration: none; color: white;">Ejemplo1@gmail.com</a></li>
+                                        <li><a style="text-decoration: none; color: white;">Ejemplo2@outlook.com</a></li>
+                                        <li class="last-item"><a style="text-decoration: none; color: white;">Mirnamedrano24@gmail.com</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <br />
+                            <br />
+                            <div>
+                                <div>
+                                    <img src="/Imagenes/logounan.png" class="img-responsive" style="width: 70px; height: 80px; float: left; margin-left: 225px;" />
+                                </div>
+                                <div class="aligncenter" style="margin-right: 340px; color: white">
+                                    &copy Todos los Derechos Reservados &copy; <%=DateTime.Now.Year.ToString()  %>
+                                    <br />
+                                    UNAN-Managua, FAREM-Carazo
+                    <br />
+                                    Proyecto para Seminario de Graduación
+                    <br />
+                                    Diseñado por: Gabriel Palacios M. &amp; Eliecer Amador R.
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </footer>--%>
+        </div>
+        <!-- /#wrapper -->
+
+
+
+
+    </form>
+    <!-- jQuery -->
+    <script src="../Scripts/jquery-1.9.1.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../Scripts/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="../Scripts/raphael.min.js"></script>
+    <script src="../Scripts/morris.min.js"></script>
+    <script src="../Scripts/morris-data.js"></script>
+
+
+    <%--prueba eliminarlo si no es necesario--%>
+    <!-- jquery Flexslider js -->
+    <%--<script src="../scripts/flexSlider.js"></script>--%>
+</body>
+</html>

@@ -1,0 +1,16 @@
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\PulperiaChina\bin\PulperiaChina.dll
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\PulperiaChina\bin\PulperiaChina.pdb
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\PulperiaChina\bin\AjaxControlToolkit.dll
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\PulperiaChina\bin\CapaEntidad.dll
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\PulperiaChina\bin\CapaNegocio.dll
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\PulperiaChina\bin\CapaDatos.dll
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\PulperiaChina\bin\EntityFramework.dll
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\PulperiaChina\bin\CapaEntidad.pdb
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\PulperiaChina\bin\CapaNegocio.pdb
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\PulperiaChina\bin\CapaDatos.pdb
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\PulperiaChina\bin\EntityFramework.xml
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\PulperiaChina\obj\Release\PulperiaChina.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\PulperiaChina\obj\Release\RdlCompile.cache
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\PulperiaChina\obj\Release\RdlCompile.compiled
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\PulperiaChina\obj\Release\PulperiaChina.dll
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\PulperiaChina\obj\Release\PulperiaChina.pdb

@@ -1,0 +1,211 @@
+C:\Users\HP\Desktop\proyecto trabajo para soza\sistema china - copia\sistemaChina\PulperiaChina\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\HP\Desktop\proyecto trabajo para soza\sistema china - copia\sistemaChina\PulperiaChina\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\proyecto trabajo para soza\sistema china - copia\sistemaChina\PulperiaChina\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\proyecto trabajo para soza\sistema china - copia\sistemaChina\PulperiaChina\CapaDatos\bin\Debug\CapaEntidad.dll
+C:\Users\HP\Desktop\proyecto trabajo para soza\sistema china - copia\sistemaChina\PulperiaChina\CapaDatos\bin\Debug\EntityFramework.dll
+C:\Users\HP\Desktop\proyecto trabajo para soza\sistema china - copia\sistemaChina\PulperiaChina\CapaDatos\bin\Debug\CapaEntidad.pdb
+C:\Users\HP\Desktop\proyecto trabajo para soza\sistema china - copia\sistemaChina\PulperiaChina\CapaDatos\bin\Debug\EntityFramework.xml
+C:\Users\HP\Desktop\proyecto trabajo para soza\sistema china - copia\sistemaChina\PulperiaChina\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\proyecto trabajo para soza\sistema china - copia\sistemaChina\PulperiaChina\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\proyecto trabajo para soza\sistema china - copia\sistemaChina\PulperiaChina\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\proyecto trabajo para soza\sistema china\sistemaChina\PulperiaChina\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\HP\Desktop\proyecto trabajo para soza\sistema china\sistemaChina\PulperiaChina\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\proyecto trabajo para soza\sistema china\sistemaChina\PulperiaChina\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\proyecto trabajo para soza\sistema china\sistemaChina\PulperiaChina\CapaDatos\bin\Debug\CapaEntidad.dll
+C:\Users\HP\Desktop\proyecto trabajo para soza\sistema china\sistemaChina\PulperiaChina\CapaDatos\bin\Debug\EntityFramework.dll
+C:\Users\HP\Desktop\proyecto trabajo para soza\sistema china\sistemaChina\PulperiaChina\CapaDatos\bin\Debug\CapaEntidad.pdb
+C:\Users\HP\Desktop\proyecto trabajo para soza\sistema china\sistemaChina\PulperiaChina\CapaDatos\bin\Debug\EntityFramework.xml
+C:\Users\HP\Desktop\proyecto trabajo para soza\sistema china\sistemaChina\PulperiaChina\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\proyecto trabajo para soza\sistema china\sistemaChina\PulperiaChina\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\proyecto trabajo para soza\sistema china\sistemaChina\PulperiaChina\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\PulperiaChina\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\PulperiaChina\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\PulperiaChina\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\PulperiaChina\CapaDatos\bin\Debug\CapaEntidad.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\PulperiaChina\CapaDatos\bin\Debug\EntityFramework.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\PulperiaChina\CapaDatos\bin\Debug\CapaEntidad.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\PulperiaChina\CapaDatos\bin\Debug\EntityFramework.xml
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\PulperiaChina\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\PulperiaChina\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\PulperiaChina\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Respaldo\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Respaldo\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Respaldo\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Respaldo--trabajando\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Respaldo--trabajando\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Respaldo--trabajando\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Respaldo--trabajando\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Respaldo--trabajando\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Respaldo--trabajando\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Respaldo--trabajando\CapaDatos\bin\Debug\CapaEntidad.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Respaldo--trabajando\CapaDatos\bin\Debug\EntityFramework.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Respaldo--trabajando\CapaDatos\bin\Debug\CapaEntidad.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Respaldo--trabajando\CapaDatos\bin\Debug\EntityFramework.xml
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\ProyectoPulperiaChina\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\ProyectoPulperiaChina\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\ProyectoPulperiaChina\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\ProyectoPulperiaChina\CapaDatos\bin\Debug\CapaEntidad.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\ProyectoPulperiaChina\CapaDatos\bin\Debug\EntityFramework.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\ProyectoPulperiaChina\CapaDatos\bin\Debug\CapaEntidad.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\ProyectoPulperiaChina\CapaDatos\bin\Debug\EntityFramework.xml
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\ProyectoPulperiaChina\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\ProyectoPulperiaChina\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\ProyectoPulperiaChina\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\ProyectoPulperiaChina - copia trbajando\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\ProyectoPulperiaChina - copia trbajando\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\ProyectoPulperiaChina - copia trbajando\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\ProyectoPulperiaChina - copia trbajando\CapaDatos\bin\Debug\AjaxControlToolkit.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\ProyectoPulperiaChina - copia trbajando\CapaDatos\bin\Debug\CapaEntidad.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\ProyectoPulperiaChina - copia trbajando\CapaDatos\bin\Debug\EntityFramework.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\ProyectoPulperiaChina - copia trbajando\CapaDatos\bin\Debug\CapaEntidad.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\ProyectoPulperiaChina - copia trbajando\CapaDatos\bin\Debug\EntityFramework.xml
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\ProyectoPulperiaChina - copia trbajando\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\ProyectoPulperiaChina - copia trbajando\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\ProyectoPulperiaChina - copia trbajando\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Trabajando\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Trabajando\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Trabajando\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Trabajando\CapaDatos\bin\Debug\AjaxControlToolkit.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Trabajando\CapaDatos\bin\Debug\CapaEntidad.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Trabajando\CapaDatos\bin\Debug\EntityFramework.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Trabajando\CapaDatos\bin\Debug\CapaEntidad.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Trabajando\CapaDatos\bin\Debug\EntityFramework.xml
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Trabajando\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Trabajando\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Trabajando\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Trabajando - respaldo\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Trabajando - respaldo\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Trabajando - respaldo\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Trabajando - respaldo\CapaDatos\bin\Debug\AjaxControlToolkit.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Trabajando - respaldo\CapaDatos\bin\Debug\CapaEntidad.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Trabajando - respaldo\CapaDatos\bin\Debug\EntityFramework.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Trabajando - respaldo\CapaDatos\bin\Debug\CapaEntidad.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Trabajando - respaldo\CapaDatos\bin\Debug\EntityFramework.xml
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Trabajando - respaldo\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Trabajando - respaldo\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Trabajando - respaldo\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Proyecto Pulperia China 201016\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Proyecto Pulperia China 201016\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Proyecto Pulperia China 201016\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Proyecto Pulperia China 201016\CapaDatos\bin\Debug\AjaxControlToolkit.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Proyecto Pulperia China 201016\CapaDatos\bin\Debug\CapaEntidad.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Proyecto Pulperia China 201016\CapaDatos\bin\Debug\EntityFramework.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Proyecto Pulperia China 201016\CapaDatos\bin\Debug\CapaEntidad.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Proyecto Pulperia China 201016\CapaDatos\bin\Debug\EntityFramework.xml
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Proyecto Pulperia China 201016\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Proyecto Pulperia China 201016\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\sistema china\sistemaChina\Proyecto Pulperia China 201016\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 271016\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 271016\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 271016\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 271016\CapaDatos\bin\Debug\AjaxControlToolkit.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 271016\CapaDatos\bin\Debug\CapaEntidad.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 271016\CapaDatos\bin\Debug\EntityFramework.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 271016\CapaDatos\bin\Debug\CapaEntidad.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 271016\CapaDatos\bin\Debug\EntityFramework.xml
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 271016\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 271016\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 271016\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 271016 - copia\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 271016 - copia\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 271016 - copia\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 271016 - copia\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 271016 - copia\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 271016 - copia\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 271016 - copia\CapaDatos\bin\Debug\AjaxControlToolkit.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 271016 - copia\CapaDatos\bin\Debug\CapaEntidad.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 271016 - copia\CapaDatos\bin\Debug\EntityFramework.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 271016 - copia\CapaDatos\bin\Debug\CapaEntidad.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 271016 - copia\CapaDatos\bin\Debug\EntityFramework.xml
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 311016- nueva DB\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 311016- nueva DB\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 311016- nueva DB\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 311016- nueva DB\CapaDatos\bin\Debug\AjaxControlToolkit.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 311016- nueva DB\CapaDatos\bin\Debug\CapaEntidad.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 311016- nueva DB\CapaDatos\bin\Debug\EntityFramework.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 311016- nueva DB\CapaDatos\bin\Debug\CapaEntidad.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 311016- nueva DB\CapaDatos\bin\Debug\EntityFramework.xml
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 311016- nueva DB\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 311016- nueva DB\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 311016- nueva DB\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 311016- nueva DB - copia\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 311016- nueva DB - copia\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 311016- nueva DB - copia\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 311016- nueva DB - copia\CapaDatos\bin\Debug\AjaxControlToolkit.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 311016- nueva DB - copia\CapaDatos\bin\Debug\CapaEntidad.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 311016- nueva DB - copia\CapaDatos\bin\Debug\EntityFramework.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 311016- nueva DB - copia\CapaDatos\bin\Debug\CapaEntidad.pdb
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 311016- nueva DB - copia\CapaDatos\bin\Debug\EntityFramework.xml
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 311016- nueva DB - copia\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 311016- nueva DB - copia\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\Proyecto PulperiaChina\Proyecto Pulperia China 311016- nueva DB - copia\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\CapaDatos\bin\Debug\AjaxControlToolkit.dll
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\CapaDatos\bin\Debug\CapaEntidad.dll
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\CapaDatos\bin\Debug\EntityFramework.dll
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\CapaDatos\bin\Debug\CapaEntidad.pdb
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\CapaDatos\bin\Debug\EntityFramework.xml
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\HP\Desktop\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\AjaxControlToolkit.dll
+C:\Users\HP\Desktop\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\CapaEntidad.dll
+C:\Users\HP\Desktop\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\EntityFramework.dll
+C:\Users\HP\Desktop\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\CapaEntidad.pdb
+C:\Users\HP\Desktop\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\EntityFramework.xml
+C:\Users\HP\Desktop\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\HP\Desktop\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\AjaxControlToolkit.dll
+C:\Users\HP\Desktop\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\CapaEntidad.dll
+C:\Users\HP\Desktop\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\EntityFramework.dll
+C:\Users\HP\Desktop\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\CapaEntidad.pdb
+C:\Users\HP\Desktop\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\EntityFramework.xml
+C:\Users\HP\Desktop\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\Elí_JAR-Backup\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\HP\Desktop\Elí_JAR-Backup\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\Elí_JAR-Backup\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\HP\Desktop\Elí_JAR-Backup\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\AjaxControlToolkit.dll
+C:\Users\HP\Desktop\Elí_JAR-Backup\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\CapaEntidad.dll
+C:\Users\HP\Desktop\Elí_JAR-Backup\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\EntityFramework.dll
+C:\Users\HP\Desktop\Elí_JAR-Backup\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\CapaEntidad.pdb
+C:\Users\HP\Desktop\Elí_JAR-Backup\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\EntityFramework.xml
+C:\Users\HP\Desktop\Elí_JAR-Backup\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\Elí_JAR-Backup\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\HP\Desktop\Elí_JAR-Backup\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\obj\Debug\CapaDatos.pdb
+H:\Users\HP\Desktop\Elí_JAR-Backup\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\CapaDatos.dll.config
+H:\Users\HP\Desktop\Elí_JAR-Backup\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\CapaDatos.dll
+H:\Users\HP\Desktop\Elí_JAR-Backup\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\CapaDatos.pdb
+H:\Users\HP\Desktop\Elí_JAR-Backup\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\AjaxControlToolkit.dll
+H:\Users\HP\Desktop\Elí_JAR-Backup\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\CapaEntidad.dll
+H:\Users\HP\Desktop\Elí_JAR-Backup\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\EntityFramework.dll
+H:\Users\HP\Desktop\Elí_JAR-Backup\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\CapaEntidad.pdb
+H:\Users\HP\Desktop\Elí_JAR-Backup\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\bin\Debug\EntityFramework.xml
+H:\Users\HP\Desktop\Elí_JAR-Backup\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+H:\Users\HP\Desktop\Elí_JAR-Backup\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+H:\Users\HP\Desktop\Elí_JAR-Backup\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+H:\Users\HP\Desktop\Elí_JAR-Backup\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\obj\Debug\CapaDatos.dll
+H:\Users\HP\Desktop\Elí_JAR-Backup\Proyectos VS y SQL\Documentos a Entregar\BD y Sistema\Proyecto Pulperia China\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\PROGRAMACION\Documents\Proyecto Pulperia China\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\PROGRAMACION\Documents\Proyecto Pulperia China\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\PROGRAMACION\Documents\Proyecto Pulperia China\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\PROGRAMACION\Documents\Proyecto Pulperia China\CapaDatos\bin\Debug\AjaxControlToolkit.dll
+C:\Users\PROGRAMACION\Documents\Proyecto Pulperia China\CapaDatos\bin\Debug\CapaEntidad.dll
+C:\Users\PROGRAMACION\Documents\Proyecto Pulperia China\CapaDatos\bin\Debug\EntityFramework.dll
+C:\Users\PROGRAMACION\Documents\Proyecto Pulperia China\CapaDatos\bin\Debug\CapaEntidad.pdb
+C:\Users\PROGRAMACION\Documents\Proyecto Pulperia China\CapaDatos\bin\Debug\EntityFramework.xml
+C:\Users\PROGRAMACION\Documents\Proyecto Pulperia China\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\PROGRAMACION\Documents\Proyecto Pulperia China\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\PROGRAMACION\Documents\Proyecto Pulperia China\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+C:\Users\PROGRAMACION\Documents\Proyecto Pulperia China\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\PROGRAMACION\Documents\Proyecto Pulperia China\CapaDatos\obj\Debug\CapaDatos.pdb

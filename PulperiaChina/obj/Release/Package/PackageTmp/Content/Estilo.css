@@ -1,0 +1,69 @@
+﻿
+.text-success {
+
+    padding: 8px;
+    color: blue;
+    font:italic;
+    text-align:center;
+}
+/*boton actualizar y eliminar*/
+     #warning
+                        {
+                            color:red;
+                            margin-top:8px;
+                           
+                        }
+ .modalBackground
+    {
+        background-color: blue;
+        filter: alpha(opacity=40);
+        opacity: 0.4;
+    }
+    .modalPopup
+    {
+        background-color: #ffffff;
+        width: 450px;
+        height:180px;
+    }
+    .modalPopup .header
+    {
+        height: 30px;
+        color: black;
+        line-height: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .modalPopup .body
+    {
+        min-height: 50px;
+        line-height: 30px;
+        text-align: center;
+        font-weight: bold;
+        margin-top:38px;
+        color:black;
+    }
+    .modalPopup .footer
+    {
+        padding: 3px;
+    }
+                        .modalPopup .yes, .modalPopup .no
+                        {
+                            margin-top:100px;
+                           
+                        }
+
+
+/*boton actualizar y eliminar*/
+
+#scrollUp {
+    background-image:url("./Imagenes/top.png");
+  	bottom: 20px;
+  	right: 20px;
+  	padding: 10px 20px;
+  	border-radius: 3px;
+  	background: #555;
+  	color: green;
+}
+
+
+

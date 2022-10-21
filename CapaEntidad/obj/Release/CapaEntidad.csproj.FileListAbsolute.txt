@@ -1,0 +1,6 @@
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\CapaEntidad\bin\Release\CapaEntidad.dll
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\CapaEntidad\bin\Release\CapaEntidad.pdb
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\CapaEntidad\bin\Release\AjaxControlToolkit.dll
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\CapaEntidad\obj\Release\CapaEntidad.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\CapaEntidad\obj\Release\CapaEntidad.dll
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\CapaEntidad\obj\Release\CapaEntidad.pdb

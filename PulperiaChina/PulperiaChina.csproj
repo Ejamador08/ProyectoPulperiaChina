@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{711930D9-81AE-457F-8349-365C8719C6D0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PulperiaChina</RootNamespace>
+    <AssemblyName>PulperiaChina</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\packages\AjaxControlToolkit.16.1.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administrador\Inicio.aspx" />
+    <Content Include="ConfigAdmin.aspx" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\custom.css" />
+    <Content Include="Content\Estilo.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\sweetalert.css" />
+    <Content Include="EntradaAdmin.aspx" />
+    <Content Include="EntradaVend.aspx" />
+    <Content Include="Imagenes\Empleado.png" />
+    <Content Include="Imagenes\faviconAhora.ico" />
+    <Content Include="Imagenes\Iconos\check.png" />
+    <Content Include="Imagenes\Iconos\page2-img2.png" />
+    <Content Include="Imagenes\Iconos\page2-img3.png" />
+    <Content Include="Imagenes\Iconos\page2-img5.png" />
+    <Content Include="Imagenes\ImagenesArticulos\img1.jpg" />
+    <Content Include="Imagenes\ImagenesArticulos\img10.jpg" />
+    <Content Include="Imagenes\ImagenesArticulos\img11.jpg" />
+    <Content Include="Imagenes\ImagenesArticulos\img12.jpg" />
+    <Content Include="Imagenes\ImagenesArticulos\img13.jpg" />
+    <Content Include="Imagenes\ImagenesArticulos\img14.jpg" />
+    <Content Include="Imagenes\ImagenesArticulos\img15.jpg" />
+    <Content Include="Imagenes\ImagenesArticulos\img16.jpg" />
+    <Content Include="Imagenes\ImagenesArticulos\img17.jpg" />
+    <Content Include="Imagenes\ImagenesArticulos\img2.jpg" />
+    <Content Include="Imagenes\ImagenesArticulos\img3.jpg" />
+    <Content Include="Imagenes\ImagenesArticulos\img4.jpg" />
+    <Content Include="Imagenes\ImagenesArticulos\img5.jpg" />
+    <Content Include="Imagenes\ImagenesArticulos\img6.png" />
+    <Content Include="Imagenes\ImagenesArticulos\img7.jpg" />
+    <Content Include="Imagenes\ImagenesArticulos\img8.jpg" />
+    <Content Include="Imagenes\ImagenesArticulos\img9.jpg" />
+    <Content Include="Imagenes\ImagenesArticulos\imgvacia.png" />
+    <Content Include="Imagenes\ImagenesArticulos\logounan.png" />
+    <Content Include="Imagenes\logoPC.jpg" />
+    <Content Include="Imagenes\logoPC.png" />
+    <Content Include="Imagenes\logounan.png" />
+    <Content Include="Imagenes\Proveedores.png" />
+    <Content Include="Imagenes\Slider\PulperiaBanner.jpg" />
+    <Content Include="Imagenes\Slider\PulperiaBanner01.jpg" />
+    <Content Include="Imagenes\Slider\PulperiaBanner02.jpg" />
+    <Content Include="Imagenes\Usuarios.png" />
+    <Content Include="Reportes\MasVendido.aspx" />
+    <Content Include="Reportes\Reporte.aspx" />
+    <Content Include="Reportes\UltimosIngresados.aspx" />
+    <Content Include="Reportes\VentasxFecha.aspx" />
+    <Content Include="Reportes\últimaFacturar.aspx" />
+    <Content Include="Scripts\flexSlider.js" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\morris.css" />
+    <Content Include="Content\sb-admin.css" />
+    <Content Include="Cuenta\Login.aspx" />
+    <Content Include="Cuenta\Registro.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Imagenes\ajax-loader.gif" />
+    <Content Include="Imagenes\Articulos.png" />
+    <Content Include="Imagenes\Slider\slide-1.jpg" />
+    <Content Include="Imagenes\Slider\slide-2.jpg" />
+    <Content Include="Imagenes\Slider\slide-3.jpg" />
+    <Content Include="Imagenes\Slider\slider01.jpg" />
+    <Content Include="Imagenes\Slider\slider02.jpg" />
+    <Content Include="Imagenes\Slider\Slider03.jpg" />
+    <Content Include="Imagenes\Slider\slider04.jpg" />
+    <Content Include="Imagenes\Slider\slider05.jpg" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Administrador\MaestraAdministrador.Master" />
+    <Content Include="Reportes\Reporte.xsc">
+      <DependentUpon>Reporte.xsd</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\PulperiaChina.pubxml" />
+    <None Include="Properties\PublishProfiles\Sistema_PulperiaChina.pubxml" />
+    <None Include="Reportes\Reporte.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Reporte.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reportes\Reporte.xss">
+      <DependentUpon>Reporte.xsd</DependentUpon>
+    </Content>
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\morris-data.js" />
+    <Content Include="Scripts\morris.min.js" />
+    <Content Include="Scripts\raphael.min.js" />
+    <Content Include="Scripts\sweetalert-dev.js" />
+    <Content Include="Scripts\sweetalert.min.js" />
+    <Content Include="Scripts\Validaciones\Validaciones.js" />
+    <Content Include="Ventas\FormCompra.aspx" />
+    <Content Include="Ventas\FormVentas.aspx" />
+    <Content Include="Ventas\VentasRealizadas.aspx" />
+    <Content Include="Visitantes\Articulos.aspx" />
+    <Content Include="Visitantes\Bodega.aspx" />
+    <Content Include="Visitantes\Bodegas_Articulos.aspx" />
+    <Content Include="Visitantes\Categoria.aspx" />
+    <Content Include="Visitantes\Cliente.aspx" />
+    <Content Include="Visitantes\Departamento.aspx" />
+    <Content Include="Visitantes\DetalleArticulo.aspx" />
+    <Content Include="Visitantes\Empleado.aspx" />
+    <Content Include="Visitantes\Inicio.aspx" />
+    <Content Include="Visitantes\Marca.aspx" />
+    <Content Include="Visitantes\Municipio.aspx" />
+    <Content Include="Visitantes\Proveedor.aspx" />
+    <Content Include="Visitantes\Usuario.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrador\Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\MaestraAdministrador.Master.cs">
+      <DependentUpon>MaestraAdministrador.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\MaestraAdministrador.Master.designer.cs">
+      <DependentUpon>MaestraAdministrador.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigAdmin.aspx.cs">
+      <DependentUpon>ConfigAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfigAdmin.aspx.designer.cs">
+      <DependentUpon>ConfigAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cuenta\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cuenta\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cuenta\Registro.aspx.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cuenta\Registro.aspx.designer.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EntradaAdmin.aspx.cs">
+      <DependentUpon>EntradaAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EntradaAdmin.aspx.designer.cs">
+      <DependentUpon>EntradaAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EntradaVend.aspx.cs">
+      <DependentUpon>EntradaVend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EntradaVend.aspx.designer.cs">
+      <DependentUpon>EntradaVend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\MasVendido.aspx.cs">
+      <DependentUpon>MasVendido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\MasVendido.aspx.designer.cs">
+      <DependentUpon>MasVendido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reporte.aspx.cs">
+      <DependentUpon>Reporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\Reporte.aspx.designer.cs">
+      <DependentUpon>Reporte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reporte.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reporte.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\UltimosIngresados.aspx.cs">
+      <DependentUpon>UltimosIngresados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\UltimosIngresados.aspx.designer.cs">
+      <DependentUpon>UltimosIngresados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\VentasxFecha.aspx.cs">
+      <DependentUpon>VentasxFecha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\VentasxFecha.aspx.designer.cs">
+      <DependentUpon>VentasxFecha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\últimaFacturar.aspx.cs">
+      <DependentUpon>últimaFacturar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes\últimaFacturar.aspx.designer.cs">
+      <DependentUpon>últimaFacturar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\FormCompra.aspx.cs">
+      <DependentUpon>FormCompra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ventas\FormCompra.aspx.designer.cs">
+      <DependentUpon>FormCompra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\FormVentas.aspx.cs">
+      <DependentUpon>FormVentas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ventas\FormVentas.aspx.designer.cs">
+      <DependentUpon>FormVentas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas\VentasRealizadas.aspx.cs">
+      <DependentUpon>VentasRealizadas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ventas\VentasRealizadas.aspx.designer.cs">
+      <DependentUpon>VentasRealizadas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitantes\Articulos.aspx.cs">
+      <DependentUpon>Articulos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitantes\Articulos.aspx.designer.cs">
+      <DependentUpon>Articulos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitantes\Bodega.aspx.cs">
+      <DependentUpon>Bodega.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitantes\Bodega.aspx.designer.cs">
+      <DependentUpon>Bodega.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitantes\Bodegas_Articulos.aspx.cs">
+      <DependentUpon>Bodegas_Articulos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitantes\Bodegas_Articulos.aspx.designer.cs">
+      <DependentUpon>Bodegas_Articulos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitantes\Categoria.aspx.cs">
+      <DependentUpon>Categoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitantes\Categoria.aspx.designer.cs">
+      <DependentUpon>Categoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitantes\Cliente.aspx.cs">
+      <DependentUpon>Cliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitantes\Cliente.aspx.designer.cs">
+      <DependentUpon>Cliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitantes\Departamento.aspx.cs">
+      <DependentUpon>Departamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitantes\Departamento.aspx.designer.cs">
+      <DependentUpon>Departamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitantes\DetalleArticulo.aspx.cs">
+      <DependentUpon>DetalleArticulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitantes\DetalleArticulo.aspx.designer.cs">
+      <DependentUpon>DetalleArticulo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitantes\Empleado.aspx.cs">
+      <DependentUpon>Empleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitantes\Empleado.aspx.designer.cs">
+      <DependentUpon>Empleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitantes\Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitantes\Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitantes\MaestraVisitante.Master.cs">
+      <DependentUpon>MaestraVisitante.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitantes\MaestraVisitante.Master.designer.cs">
+      <DependentUpon>MaestraVisitante.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Visitantes\Marca.aspx.cs">
+      <DependentUpon>Marca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitantes\Marca.aspx.designer.cs">
+      <DependentUpon>Marca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitantes\Municipio.aspx.cs">
+      <DependentUpon>Municipio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitantes\Municipio.aspx.designer.cs">
+      <DependentUpon>Municipio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitantes\Proveedor.aspx.cs">
+      <DependentUpon>Proveedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitantes\Proveedor.aspx.designer.cs">
+      <DependentUpon>Proveedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visitantes\Usuario.aspx.cs">
+      <DependentUpon>Usuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visitantes\Usuario.aspx.designer.cs">
+      <DependentUpon>Usuario.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Visitantes\MaestraVisitante.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaEntidad\CapaEntidad.csproj">
+      <Project>{ecfc972d-409e-49f6-ba33-fdc9f2ccf015}</Project>
+      <Name>CapaEntidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj">
+      <Project>{5ae07c80-5266-4fdc-a6bb-c34f5a888cc6}</Project>
+      <Name>CapaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Imagenes\ImagenesEmpleados\" />
+    <Folder Include="Imagenes\ImagenesProveedores\" />
+    <Folder Include="Imagenes\ImagenesUsuarios\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reportes\MasVendidos.rdlc" />
+    <EmbeddedResource Include="Reportes\UltimosIngresos.rdlc" />
+    <EmbeddedResource Include="Reportes\VentasxFecha.rdlc" />
+    <EmbeddedResource Include="Reportes\últimaFactura.rdlc" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:5272/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,12 @@
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\CapaNegocio\bin\Release\CapaNegocio.dll
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\CapaNegocio\bin\Release\CapaNegocio.pdb
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\CapaNegocio\bin\Release\AjaxControlToolkit.dll
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\CapaNegocio\bin\Release\CapaDatos.dll
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\CapaNegocio\bin\Release\CapaEntidad.dll
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\CapaNegocio\bin\Release\EntityFramework.dll
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\CapaNegocio\bin\Release\CapaDatos.pdb
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\CapaNegocio\bin\Release\CapaEntidad.pdb
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\CapaNegocio\bin\Release\EntityFramework.xml
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\CapaNegocio\obj\Release\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\CapaNegocio\obj\Release\CapaNegocio.dll
+C:\Users\HP\Desktop\RespadoFinal\Proyecto Pulperia China respaldo 051216\CapaNegocio\obj\Release\CapaNegocio.pdb

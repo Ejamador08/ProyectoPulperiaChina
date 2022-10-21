@@ -1,0 +1,1446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Respaldo_PulperiaChinaModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="Respaldo_PulperiaChinaModelStoreContainer">
+          <EntitySet Name="CatArticulo" EntityType="Respaldo_PulperiaChinaModel.Store.CatArticulo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CatBodega" EntityType="Respaldo_PulperiaChinaModel.Store.CatBodega" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CatCategoria" EntityType="Respaldo_PulperiaChinaModel.Store.CatCategoria" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CatCliente" EntityType="Respaldo_PulperiaChinaModel.Store.CatCliente" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CatDepartamento" EntityType="Respaldo_PulperiaChinaModel.Store.CatDepartamento" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CatEmpleado" EntityType="Respaldo_PulperiaChinaModel.Store.CatEmpleado" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CatMarca" EntityType="Respaldo_PulperiaChinaModel.Store.CatMarca" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CatMunicipio" EntityType="Respaldo_PulperiaChinaModel.Store.CatMunicipio" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CatProveedor" EntityType="Respaldo_PulperiaChinaModel.Store.CatProveedor" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CatUsuario" EntityType="Respaldo_PulperiaChinaModel.Store.CatUsuario" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Empresa" EntityType="Respaldo_PulperiaChinaModel.Store.Empresa" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="sysdiagrams" EntityType="Respaldo_PulperiaChinaModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblAbono_Cliente" EntityType="Respaldo_PulperiaChinaModel.Store.tblAbono_Cliente" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblArticulo_Bodega" EntityType="Respaldo_PulperiaChinaModel.Store.tblArticulo_Bodega" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblCompra" EntityType="Respaldo_PulperiaChinaModel.Store.tblCompra" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblDetalleCompra" EntityType="Respaldo_PulperiaChinaModel.Store.tblDetalleCompra" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblDetalleCpaTemp" EntityType="Respaldo_PulperiaChinaModel.Store.tblDetalleCpaTemp" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblDetalleVenta" EntityType="Respaldo_PulperiaChinaModel.Store.tblDetalleVenta" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblDetalleVtaTemp" EntityType="Respaldo_PulperiaChinaModel.Store.tblDetalleVtaTemp" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblPedidos" EntityType="Respaldo_PulperiaChinaModel.Store.tblPedidos" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblVenta" EntityType="Respaldo_PulperiaChinaModel.Store.tblVenta" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblVentaCredito" EntityType="Respaldo_PulperiaChinaModel.Store.tblVentaCredito" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_CatArticulo_CatCategoria" Association="Respaldo_PulperiaChinaModel.Store.FK_CatArticulo_CatCategoria">
+            <End Role="CatCategoria" EntitySet="CatCategoria" />
+            <End Role="CatArticulo" EntitySet="CatArticulo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CatArticulo_CatMarca" Association="Respaldo_PulperiaChinaModel.Store.FK_CatArticulo_CatMarca">
+            <End Role="CatMarca" EntitySet="CatMarca" />
+            <End Role="CatArticulo" EntitySet="CatArticulo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CatArticulo_CatProveedor" Association="Respaldo_PulperiaChinaModel.Store.FK_CatArticulo_CatProveedor">
+            <End Role="CatProveedor" EntitySet="CatProveedor" />
+            <End Role="CatArticulo" EntitySet="CatArticulo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblAbono_tblVentaCredito" Association="Respaldo_PulperiaChinaModel.Store.FK_tblAbono_tblVentaCredito">
+            <End Role="tblVentaCredito" EntitySet="tblVentaCredito" />
+            <End Role="tblAbono_Cliente" EntitySet="tblAbono_Cliente" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblAbono_tblVentaCredito1" Association="Respaldo_PulperiaChinaModel.Store.FK_tblAbono_tblVentaCredito1">
+            <End Role="tblVentaCredito" EntitySet="tblVentaCredito" />
+            <End Role="tblAbono_Cliente" EntitySet="tblAbono_Cliente" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblArticulo_Bodega_CatArticulo" Association="Respaldo_PulperiaChinaModel.Store.FK_tblArticulo_Bodega_CatArticulo">
+            <End Role="CatArticulo" EntitySet="CatArticulo" />
+            <End Role="tblArticulo_Bodega" EntitySet="tblArticulo_Bodega" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblArticulo_Bodega_CatBodega" Association="Respaldo_PulperiaChinaModel.Store.FK_tblArticulo_Bodega_CatBodega">
+            <End Role="CatBodega" EntitySet="CatBodega" />
+            <End Role="tblArticulo_Bodega" EntitySet="tblArticulo_Bodega" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblCliente_tblMunicipio" Association="Respaldo_PulperiaChinaModel.Store.FK_tblCliente_tblMunicipio">
+            <End Role="CatMunicipio" EntitySet="CatMunicipio" />
+            <End Role="CatCliente" EntitySet="CatCliente" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblCompra_tblProveedor" Association="Respaldo_PulperiaChinaModel.Store.FK_tblCompra_tblProveedor">
+            <End Role="CatProveedor" EntitySet="CatProveedor" />
+            <End Role="tblPedidos" EntitySet="tblPedidos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblDetalleVenta_tblArticulo" Association="Respaldo_PulperiaChinaModel.Store.FK_tblDetalleVenta_tblArticulo">
+            <End Role="CatArticulo" EntitySet="CatArticulo" />
+            <End Role="tblDetalleVenta" EntitySet="tblDetalleVenta" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblDetalleVenta_tblVenta" Association="Respaldo_PulperiaChinaModel.Store.FK_tblDetalleVenta_tblVenta">
+            <End Role="tblVenta" EntitySet="tblVenta" />
+            <End Role="tblDetalleVenta" EntitySet="tblDetalleVenta" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblDetalleVtaTemp_CatArticulo" Association="Respaldo_PulperiaChinaModel.Store.FK_tblDetalleVtaTemp_CatArticulo">
+            <End Role="CatArticulo" EntitySet="CatArticulo" />
+            <End Role="tblDetalleVtaTemp" EntitySet="tblDetalleVtaTemp" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblMunicipio_tblDepartamento" Association="Respaldo_PulperiaChinaModel.Store.FK_tblMunicipio_tblDepartamento">
+            <End Role="CatDepartamento" EntitySet="CatDepartamento" />
+            <End Role="CatMunicipio" EntitySet="CatMunicipio" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblVenta_tblCliente" Association="Respaldo_PulperiaChinaModel.Store.FK_tblVenta_tblCliente">
+            <End Role="CatCliente" EntitySet="CatCliente" />
+            <End Role="tblVenta" EntitySet="tblVenta" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblVentaCredito_tblCliente" Association="Respaldo_PulperiaChinaModel.Store.FK_tblVentaCredito_tblCliente">
+            <End Role="CatCliente" EntitySet="CatCliente" />
+            <End Role="tblVentaCredito" EntitySet="tblVentaCredito" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="CatArticulo">
+          <Key>
+            <PropertyRef Name="ID_Articulo" />
+          </Key>
+          <Property Name="ID_Articulo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_Articulo" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Descripcion" Type="nvarchar" MaxLength="100" />
+          <Property Name="ID_Categoria" Type="int" Nullable="false" />
+          <Property Name="ID_Proveedor" Type="int" Nullable="false" />
+          <Property Name="ID_Marca" Type="int" />
+          <Property Name="Estado" Type="bit" />
+          <Property Name="RutaImagen" Type="varchar" MaxLength="300" />
+          <Property Name="Garantia" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="CatBodega">
+          <Key>
+            <PropertyRef Name="ID_Bodega" />
+          </Key>
+          <Property Name="ID_Bodega" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_Bodega" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Descripcion" Type="nvarchar" MaxLength="100" />
+          <Property Name="Estado" Type="bit" />
+        </EntityType>
+        <EntityType Name="CatCategoria">
+          <Key>
+            <PropertyRef Name="ID_Categoria" />
+          </Key>
+          <Property Name="ID_Categoria" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_Categoria" Type="nvarchar" Nullable="false" MaxLength="80" />
+          <Property Name="Descripcion_Categoria" Type="nvarchar" MaxLength="300" />
+          <Property Name="Estado" Type="bit" />
+        </EntityType>
+        <EntityType Name="CatCliente">
+          <Key>
+            <PropertyRef Name="ID_Cliente" />
+          </Key>
+          <Property Name="ID_Cliente" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_Cliente" Type="nvarchar" Nullable="false" MaxLength="60" />
+          <Property Name="Apellido1_Cliente" Type="nvarchar" Nullable="false" MaxLength="60" />
+          <Property Name="Direccion" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="N° de Cedula" Type="nvarchar" MaxLength="30" />
+          <Property Name="Telefono_Celular" Type="varchar" MaxLength="20" />
+          <Property Name="Estado" Type="bit" />
+          <Property Name="ID_Municipio" Type="int" />
+          <Property Name="Email" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="40" />
+        </EntityType>
+        <EntityType Name="CatDepartamento">
+          <Key>
+            <PropertyRef Name="ID_Departamento" />
+          </Key>
+          <Property Name="ID_Departamento" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_Depto" Type="nvarchar" MaxLength="30" />
+          <Property Name="Estado" Type="bit" />
+        </EntityType>
+        <EntityType Name="CatEmpleado">
+          <Key>
+            <PropertyRef Name="IDEmpleado" />
+          </Key>
+          <Property Name="IDEmpleado" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="nvarchar" MaxLength="30" />
+          <Property Name="Apellido1" Type="nvarchar" MaxLength="30" />
+          <Property Name="Apellido2" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Direccion" Type="nvarchar(max)" />
+          <Property Name="Telefono" Type="nvarchar" MaxLength="50" />
+          <Property Name="E-Mail" Type="nvarchar" Nullable="false" MaxLength="70" />
+          <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="30" />
+          <Property Name="Estado" Type="bit" />
+          <Property Name="ImgEmpleado" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="CatMarca">
+          <Key>
+            <PropertyRef Name="IDMarca" />
+          </Key>
+          <Property Name="IDMarca" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_Marca" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Estado" Type="bit" />
+        </EntityType>
+        <EntityType Name="CatMunicipio">
+          <Key>
+            <PropertyRef Name="ID_Municipio" />
+          </Key>
+          <Property Name="ID_Municipio" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_Municipio" Type="nvarchar" MaxLength="30" />
+          <Property Name="ID_Departamento" Type="int" />
+          <Property Name="Estado" Type="bit" />
+        </EntityType>
+        <EntityType Name="CatProveedor">
+          <Key>
+            <PropertyRef Name="ID_Proveedor" />
+          </Key>
+          <Property Name="ID_Proveedor" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_Proveedor" Type="nvarchar" MaxLength="100" />
+          <Property Name="Telefono" Type="varchar" MaxLength="100" />
+          <Property Name="Direccion" Type="nvarchar" MaxLength="100" />
+          <Property Name="Email" Type="nvarchar" MaxLength="100" />
+          <Property Name="Estado" Type="bit" />
+          <Property Name="RutaLogo" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="CatUsuario">
+          <Key>
+            <PropertyRef Name="ID_Usuario" />
+          </Key>
+          <Property Name="ID_Usuario" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_User" Type="nvarchar" MaxLength="100" />
+          <Property Name="Apellido1_User" Type="nvarchar" MaxLength="100" />
+          <Property Name="Apellido2_User" Type="nvarchar" MaxLength="100" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="100" />
+          <Property Name="Tipo_Usuario" Type="nvarchar" MaxLength="100" />
+          <Property Name="ImgUser" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Empresa">
+          <Key>
+            <PropertyRef Name="ID_Informacion" />
+          </Key>
+          <Property Name="ID_Informacion" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_Empresa" Type="nvarchar" MaxLength="100" />
+          <Property Name="Propietario" Type="nvarchar" MaxLength="100" />
+          <Property Name="Admonistrador" Type="nvarchar" MaxLength="100" />
+          <Property Name="Ubicacion" Type="nvarchar" MaxLength="100" />
+          <Property Name="Descripcion" Type="nvarchar" MaxLength="100" />
+          <Property Name="Municipio" Type="nvarchar" MaxLength="100" />
+          <Property Name="Departamento" Type="nvarchar" MaxLength="100" />
+          <Property Name="Telefono" Type="nvarchar" MaxLength="100" />
+          <Property Name="Email" Type="nvarchar" MaxLength="100" />
+          <Property Name="Logo" Type="nvarchar" MaxLength="100" />
+          <Property Name="CambioDolar" Type="real" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="tblAbono_Cliente">
+          <Key>
+            <PropertyRef Name="ID_VentaCredito" />
+          </Key>
+          <Property Name="ID_VentaCredito" Type="int" Nullable="false" />
+          <Property Name="Fecha_Abono" Type="datetime" Nullable="false" />
+          <Property Name="Monto_Abono" Type="real" Nullable="false" />
+          <Property Name="Mora" Type="real" />
+        </EntityType>
+        <EntityType Name="tblArticulo_Bodega">
+          <Key>
+            <PropertyRef Name="ID_BodegaArticulo" />
+          </Key>
+          <Property Name="ID_BodegaArticulo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ID_Articulo" Type="int" Nullable="false" />
+          <Property Name="ID_Bodega" Type="int" Nullable="false" />
+          <Property Name="Precio_Compra" Type="real" Nullable="false" />
+          <Property Name="Precion_Venta" Type="real" Nullable="false" />
+          <Property Name="Existencia" Type="int" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tblCompra">
+          <Key>
+            <PropertyRef Name="ID_Compra" />
+          </Key>
+          <Property Name="ID_Compra" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Fecha_Compra" Type="datetime" />
+          <Property Name="Total" Type="money" />
+        </EntityType>
+        <EntityType Name="tblDetalleCompra">
+          <Key>
+            <PropertyRef Name="ID_DetalleCompra" />
+          </Key>
+          <Property Name="ID_DetalleCompra" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ID_Compra" Type="int" />
+          <Property Name="Total" Type="money" />
+          <Property Name="SubTotal" Type="money" />
+          <Property Name="Cantidad" Type="int" />
+          <Property Name="ID_Articulo" Type="int" />
+          <Property Name="Precio_Compra" Type="money" />
+          <Property Name="Precio_Venta" Type="money" />
+          <Property Name="ID_Proveedor" Type="int" />
+          <Property Name="ID_Bodega" Type="int" />
+          <Property Name="ID_Marca" Type="int" />
+          <Property Name="Fecha_Entrega" Type="date" />
+        </EntityType>
+        <EntityType Name="tblDetalleCpaTemp">
+          <Key>
+            <PropertyRef Name="ID_ComraTmp" />
+          </Key>
+          <Property Name="ID_ComraTmp" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SubTotal" Type="money" />
+          <Property Name="Cantidad" Type="int" />
+          <Property Name="ID_Articulo" Type="int" />
+          <Property Name="Precio_Compra" Type="money" />
+          <Property Name="Precio_Venta" Type="money" />
+          <Property Name="ID_Proveedor" Type="int" />
+          <Property Name="ID_Bodega" Type="int" />
+          <Property Name="ID_Marca" Type="int" />
+          <Property Name="Fecha_Entrega" Type="date" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tblDetalleVenta">
+          <Key>
+            <PropertyRef Name="ID_DetalleVenta" />
+          </Key>
+          <Property Name="ID_DetalleVenta" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ID_Articulo" Type="int" />
+          <Property Name="ID_Venta" Type="int" />
+          <Property Name="SubTotal" Type="real" />
+          <Property Name="Estado" Type="nvarchar" MaxLength="100" />
+          <Property Name="Descuento" Type="real" />
+          <Property Name="Precio" Type="real" />
+          <Property Name="Cantidad" Type="int" />
+          <Property Name="Garantia" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tblDetalleVtaTemp">
+          <Key>
+            <PropertyRef Name="ID_DetalleTemp" />
+          </Key>
+          <Property Name="ID_DetalleTemp" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ID_Articulo" Type="int" />
+          <Property Name="SubTotal" Type="real" />
+          <Property Name="Estado" Type="nvarchar" MaxLength="100" />
+          <Property Name="Descuento" Type="real" />
+          <Property Name="Precio" Type="money" />
+          <Property Name="Cantidad" Type="int" />
+          <Property Name="Garantia" Type="nvarchar" MaxLength="50" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tblPedidos">
+          <Key>
+            <PropertyRef Name="ID_Compra" />
+          </Key>
+          <Property Name="ID_Compra" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Fecha_Compra" Type="datetime" />
+          <Property Name="Fecha_Recepcion" Type="datetime" />
+          <Property Name="Sub-Total" Type="real" />
+          <Property Name="IVA" Type="real" />
+          <Property Name="Descuento" Type="real" />
+          <Property Name="Total" Type="real" />
+          <Property Name="Pendiente_Aprobacion" Type="nvarchar" MaxLength="60" />
+          <Property Name="ID_Proveedor" Type="int" Nullable="false" />
+          <Property Name="Estado" Type="bit" />
+        </EntityType>
+        <EntityType Name="tblVenta">
+          <Key>
+            <PropertyRef Name="ID_Venta" />
+          </Key>
+          <Property Name="ID_Venta" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Fecha_Vta" Type="datetime" />
+          <Property Name="ID_Cliente" Type="int" />
+          <Property Name="ID_Usuario" Type="int" Nullable="false" />
+          <Property Name="NombreCliente" Type="nvarchar" MaxLength="100" />
+          <Property Name="Total" Type="money" Nullable="false" />
+          <Property Name="Anulada" Type="nvarchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="tblVentaCredito">
+          <Key>
+            <PropertyRef Name="ID_Venta" />
+          </Key>
+          <Property Name="ID_Venta" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ID_Cliente" Type="int" />
+          <Property Name="ID_Articulo" Type="int" Nullable="false" />
+          <Property Name="Feche_Venta" Type="date" Nullable="false" />
+          <Property Name="Plazos" Type="real" Nullable="false" />
+          <Property Name="Prima" Type="real" />
+          <Property Name="Interes" Type="real" Nullable="false" />
+          <Property Name="Descuento" Type="real" />
+        </EntityType>
+        <Association Name="FK_CatArticulo_CatCategoria">
+          <End Role="CatCategoria" Type="Respaldo_PulperiaChinaModel.Store.CatCategoria" Multiplicity="1" />
+          <End Role="CatArticulo" Type="Respaldo_PulperiaChinaModel.Store.CatArticulo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CatCategoria">
+              <PropertyRef Name="ID_Categoria" />
+            </Principal>
+            <Dependent Role="CatArticulo">
+              <PropertyRef Name="ID_Categoria" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CatArticulo_CatMarca">
+          <End Role="CatMarca" Type="Respaldo_PulperiaChinaModel.Store.CatMarca" Multiplicity="0..1" />
+          <End Role="CatArticulo" Type="Respaldo_PulperiaChinaModel.Store.CatArticulo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CatMarca">
+              <PropertyRef Name="IDMarca" />
+            </Principal>
+            <Dependent Role="CatArticulo">
+              <PropertyRef Name="ID_Marca" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CatArticulo_CatProveedor">
+          <End Role="CatProveedor" Type="Respaldo_PulperiaChinaModel.Store.CatProveedor" Multiplicity="1" />
+          <End Role="CatArticulo" Type="Respaldo_PulperiaChinaModel.Store.CatArticulo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CatProveedor">
+              <PropertyRef Name="ID_Proveedor" />
+            </Principal>
+            <Dependent Role="CatArticulo">
+              <PropertyRef Name="ID_Proveedor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblAbono_tblVentaCredito">
+          <End Role="tblVentaCredito" Type="Respaldo_PulperiaChinaModel.Store.tblVentaCredito" Multiplicity="1" />
+          <End Role="tblAbono_Cliente" Type="Respaldo_PulperiaChinaModel.Store.tblAbono_Cliente" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="tblVentaCredito">
+              <PropertyRef Name="ID_Venta" />
+            </Principal>
+            <Dependent Role="tblAbono_Cliente">
+              <PropertyRef Name="ID_VentaCredito" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblAbono_tblVentaCredito1">
+          <End Role="tblVentaCredito" Type="Respaldo_PulperiaChinaModel.Store.tblVentaCredito" Multiplicity="1" />
+          <End Role="tblAbono_Cliente" Type="Respaldo_PulperiaChinaModel.Store.tblAbono_Cliente" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="tblVentaCredito">
+              <PropertyRef Name="ID_Venta" />
+            </Principal>
+            <Dependent Role="tblAbono_Cliente">
+              <PropertyRef Name="ID_VentaCredito" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblArticulo_Bodega_CatArticulo">
+          <End Role="CatArticulo" Type="Respaldo_PulperiaChinaModel.Store.CatArticulo" Multiplicity="1" />
+          <End Role="tblArticulo_Bodega" Type="Respaldo_PulperiaChinaModel.Store.tblArticulo_Bodega" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CatArticulo">
+              <PropertyRef Name="ID_Articulo" />
+            </Principal>
+            <Dependent Role="tblArticulo_Bodega">
+              <PropertyRef Name="ID_Articulo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblArticulo_Bodega_CatBodega">
+          <End Role="CatBodega" Type="Respaldo_PulperiaChinaModel.Store.CatBodega" Multiplicity="1" />
+          <End Role="tblArticulo_Bodega" Type="Respaldo_PulperiaChinaModel.Store.tblArticulo_Bodega" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CatBodega">
+              <PropertyRef Name="ID_Bodega" />
+            </Principal>
+            <Dependent Role="tblArticulo_Bodega">
+              <PropertyRef Name="ID_Bodega" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblCliente_tblMunicipio">
+          <End Role="CatMunicipio" Type="Respaldo_PulperiaChinaModel.Store.CatMunicipio" Multiplicity="0..1" />
+          <End Role="CatCliente" Type="Respaldo_PulperiaChinaModel.Store.CatCliente" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CatMunicipio">
+              <PropertyRef Name="ID_Municipio" />
+            </Principal>
+            <Dependent Role="CatCliente">
+              <PropertyRef Name="ID_Municipio" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblCompra_tblProveedor">
+          <End Role="CatProveedor" Type="Respaldo_PulperiaChinaModel.Store.CatProveedor" Multiplicity="1" />
+          <End Role="tblPedidos" Type="Respaldo_PulperiaChinaModel.Store.tblPedidos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CatProveedor">
+              <PropertyRef Name="ID_Proveedor" />
+            </Principal>
+            <Dependent Role="tblPedidos">
+              <PropertyRef Name="ID_Proveedor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblDetalleVenta_tblArticulo">
+          <End Role="CatArticulo" Type="Respaldo_PulperiaChinaModel.Store.CatArticulo" Multiplicity="0..1" />
+          <End Role="tblDetalleVenta" Type="Respaldo_PulperiaChinaModel.Store.tblDetalleVenta" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CatArticulo">
+              <PropertyRef Name="ID_Articulo" />
+            </Principal>
+            <Dependent Role="tblDetalleVenta">
+              <PropertyRef Name="ID_Articulo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblDetalleVenta_tblVenta">
+          <End Role="tblVenta" Type="Respaldo_PulperiaChinaModel.Store.tblVenta" Multiplicity="0..1" />
+          <End Role="tblDetalleVenta" Type="Respaldo_PulperiaChinaModel.Store.tblDetalleVenta" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblVenta">
+              <PropertyRef Name="ID_Venta" />
+            </Principal>
+            <Dependent Role="tblDetalleVenta">
+              <PropertyRef Name="ID_Venta" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblDetalleVtaTemp_CatArticulo">
+          <End Role="CatArticulo" Type="Respaldo_PulperiaChinaModel.Store.CatArticulo" Multiplicity="0..1" />
+          <End Role="tblDetalleVtaTemp" Type="Respaldo_PulperiaChinaModel.Store.tblDetalleVtaTemp" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CatArticulo">
+              <PropertyRef Name="ID_Articulo" />
+            </Principal>
+            <Dependent Role="tblDetalleVtaTemp">
+              <PropertyRef Name="ID_Articulo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblMunicipio_tblDepartamento">
+          <End Role="CatDepartamento" Type="Respaldo_PulperiaChinaModel.Store.CatDepartamento" Multiplicity="0..1" />
+          <End Role="CatMunicipio" Type="Respaldo_PulperiaChinaModel.Store.CatMunicipio" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CatDepartamento">
+              <PropertyRef Name="ID_Departamento" />
+            </Principal>
+            <Dependent Role="CatMunicipio">
+              <PropertyRef Name="ID_Departamento" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblVenta_tblCliente">
+          <End Role="CatCliente" Type="Respaldo_PulperiaChinaModel.Store.CatCliente" Multiplicity="0..1" />
+          <End Role="tblVenta" Type="Respaldo_PulperiaChinaModel.Store.tblVenta" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CatCliente">
+              <PropertyRef Name="ID_Cliente" />
+            </Principal>
+            <Dependent Role="tblVenta">
+              <PropertyRef Name="ID_Cliente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblVentaCredito_tblCliente">
+          <End Role="CatCliente" Type="Respaldo_PulperiaChinaModel.Store.CatCliente" Multiplicity="0..1" />
+          <End Role="tblVentaCredito" Type="Respaldo_PulperiaChinaModel.Store.tblVentaCredito" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CatCliente">
+              <PropertyRef Name="ID_Cliente" />
+            </Principal>
+            <Dependent Role="tblVentaCredito">
+              <PropertyRef Name="ID_Cliente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <!--Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'Respaldo_PulperiaChina.dbo.tblCaja' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="tblCaja">
+        <Property Name="Fecha_Apertura" Type="date" />
+        <Property Name="Hora_Apertura" Type="time" />
+        <Property Name="Monto_Apertura" Type="float" />
+        <Property Name="Fecha_Cierre" Type="date" />
+        <Property Name="Hora_Cierre" Type="time" />
+        <Property Name="Monto_Cierre" Type="float" />
+      </EntityType>
+      Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'Respaldo_PulperiaChina.dbo.tblDetalleVentaCredito' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="tblDetalleVentaCredito">
+        <Property Name="ID_VentaCredito" Type="int" />
+        <Property Name="ID_Producto" Type="int" />
+        <Property Name="Cantidad" Type="nchar" MaxLength="10" />
+        <Property Name="Precio" Type="nchar" MaxLength="10" />
+        <Property Name="IVA" Type="nchar" MaxLength="10" />
+      </EntityType>-->
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Respaldo_PulperiaChinaModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="Respaldo_PulperiaChinaEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="CatArticulo" EntityType="Respaldo_PulperiaChinaModel.CatArticulo" />
+          <EntitySet Name="CatBodega" EntityType="Respaldo_PulperiaChinaModel.CatBodega" />
+          <EntitySet Name="CatCategoria" EntityType="Respaldo_PulperiaChinaModel.CatCategoria" />
+          <EntitySet Name="CatCliente" EntityType="Respaldo_PulperiaChinaModel.CatCliente" />
+          <EntitySet Name="CatDepartamento" EntityType="Respaldo_PulperiaChinaModel.CatDepartamento" />
+          <EntitySet Name="CatEmpleado" EntityType="Respaldo_PulperiaChinaModel.CatEmpleado" />
+          <EntitySet Name="CatMarca" EntityType="Respaldo_PulperiaChinaModel.CatMarca" />
+          <EntitySet Name="CatMunicipio" EntityType="Respaldo_PulperiaChinaModel.CatMunicipio" />
+          <EntitySet Name="CatProveedor" EntityType="Respaldo_PulperiaChinaModel.CatProveedor" />
+          <EntitySet Name="CatUsuario" EntityType="Respaldo_PulperiaChinaModel.CatUsuario" />
+          <EntitySet Name="Empresa" EntityType="Respaldo_PulperiaChinaModel.Empresa" />
+          <EntitySet Name="sysdiagrams" EntityType="Respaldo_PulperiaChinaModel.sysdiagrams" />
+          <EntitySet Name="tblAbono_Cliente" EntityType="Respaldo_PulperiaChinaModel.tblAbono_Cliente" />
+          <EntitySet Name="tblArticulo_Bodega" EntityType="Respaldo_PulperiaChinaModel.tblArticulo_Bodega" />
+          <EntitySet Name="tblCompra" EntityType="Respaldo_PulperiaChinaModel.tblCompra" />
+          <EntitySet Name="tblDetalleCompra" EntityType="Respaldo_PulperiaChinaModel.tblDetalleCompra" />
+          <EntitySet Name="tblDetalleCpaTemp" EntityType="Respaldo_PulperiaChinaModel.tblDetalleCpaTemp" />
+          <EntitySet Name="tblDetalleVenta" EntityType="Respaldo_PulperiaChinaModel.tblDetalleVenta" />
+          <EntitySet Name="tblDetalleVtaTemp" EntityType="Respaldo_PulperiaChinaModel.tblDetalleVtaTemp" />
+          <EntitySet Name="tblPedidos" EntityType="Respaldo_PulperiaChinaModel.tblPedidos" />
+          <EntitySet Name="tblVenta" EntityType="Respaldo_PulperiaChinaModel.tblVenta" />
+          <EntitySet Name="tblVentaCredito" EntityType="Respaldo_PulperiaChinaModel.tblVentaCredito" />
+          <AssociationSet Name="FK_CatArticulo_CatCategoria" Association="Respaldo_PulperiaChinaModel.FK_CatArticulo_CatCategoria">
+            <End Role="CatCategoria" EntitySet="CatCategoria" />
+            <End Role="CatArticulo" EntitySet="CatArticulo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CatArticulo_CatMarca" Association="Respaldo_PulperiaChinaModel.FK_CatArticulo_CatMarca">
+            <End Role="CatMarca" EntitySet="CatMarca" />
+            <End Role="CatArticulo" EntitySet="CatArticulo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CatArticulo_CatProveedor" Association="Respaldo_PulperiaChinaModel.FK_CatArticulo_CatProveedor">
+            <End Role="CatProveedor" EntitySet="CatProveedor" />
+            <End Role="CatArticulo" EntitySet="CatArticulo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblArticulo_Bodega_CatArticulo" Association="Respaldo_PulperiaChinaModel.FK_tblArticulo_Bodega_CatArticulo">
+            <End Role="CatArticulo" EntitySet="CatArticulo" />
+            <End Role="tblArticulo_Bodega" EntitySet="tblArticulo_Bodega" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblDetalleVenta_tblArticulo" Association="Respaldo_PulperiaChinaModel.FK_tblDetalleVenta_tblArticulo">
+            <End Role="CatArticulo" EntitySet="CatArticulo" />
+            <End Role="tblDetalleVenta" EntitySet="tblDetalleVenta" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblDetalleVtaTemp_CatArticulo" Association="Respaldo_PulperiaChinaModel.FK_tblDetalleVtaTemp_CatArticulo">
+            <End Role="CatArticulo" EntitySet="CatArticulo" />
+            <End Role="tblDetalleVtaTemp" EntitySet="tblDetalleVtaTemp" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblArticulo_Bodega_CatBodega" Association="Respaldo_PulperiaChinaModel.FK_tblArticulo_Bodega_CatBodega">
+            <End Role="CatBodega" EntitySet="CatBodega" />
+            <End Role="tblArticulo_Bodega" EntitySet="tblArticulo_Bodega" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblCliente_tblMunicipio" Association="Respaldo_PulperiaChinaModel.FK_tblCliente_tblMunicipio">
+            <End Role="CatMunicipio" EntitySet="CatMunicipio" />
+            <End Role="CatCliente" EntitySet="CatCliente" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblVenta_tblCliente" Association="Respaldo_PulperiaChinaModel.FK_tblVenta_tblCliente">
+            <End Role="CatCliente" EntitySet="CatCliente" />
+            <End Role="tblVenta" EntitySet="tblVenta" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblVentaCredito_tblCliente" Association="Respaldo_PulperiaChinaModel.FK_tblVentaCredito_tblCliente">
+            <End Role="CatCliente" EntitySet="CatCliente" />
+            <End Role="tblVentaCredito" EntitySet="tblVentaCredito" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblMunicipio_tblDepartamento" Association="Respaldo_PulperiaChinaModel.FK_tblMunicipio_tblDepartamento">
+            <End Role="CatDepartamento" EntitySet="CatDepartamento" />
+            <End Role="CatMunicipio" EntitySet="CatMunicipio" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblCompra_tblProveedor" Association="Respaldo_PulperiaChinaModel.FK_tblCompra_tblProveedor">
+            <End Role="CatProveedor" EntitySet="CatProveedor" />
+            <End Role="tblPedidos" EntitySet="tblPedidos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblAbono_tblVentaCredito" Association="Respaldo_PulperiaChinaModel.FK_tblAbono_tblVentaCredito">
+            <End Role="tblVentaCredito" EntitySet="tblVentaCredito" />
+            <End Role="tblAbono_Cliente" EntitySet="tblAbono_Cliente" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblAbono_tblVentaCredito1" Association="Respaldo_PulperiaChinaModel.FK_tblAbono_tblVentaCredito1">
+            <End Role="tblVentaCredito" EntitySet="tblVentaCredito" />
+            <End Role="tblAbono_Cliente" EntitySet="tblAbono_Cliente" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblDetalleVenta_tblVenta" Association="Respaldo_PulperiaChinaModel.FK_tblDetalleVenta_tblVenta">
+            <End Role="tblVenta" EntitySet="tblVenta" />
+            <End Role="tblDetalleVenta" EntitySet="tblDetalleVenta" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="CatArticulo">
+          <Key>
+            <PropertyRef Name="ID_Articulo" />
+          </Key>
+          <Property Name="ID_Articulo" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_Articulo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="ID_Categoria" Type="Int32" Nullable="false" />
+          <Property Name="ID_Proveedor" Type="Int32" Nullable="false" />
+          <Property Name="ID_Marca" Type="Int32" />
+          <Property Name="Estado" Type="Boolean" />
+          <Property Name="RutaImagen" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+          <Property Name="Garantia" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="CatCategoria" Relationship="Respaldo_PulperiaChinaModel.FK_CatArticulo_CatCategoria" FromRole="CatArticulo" ToRole="CatCategoria" />
+          <NavigationProperty Name="CatMarca" Relationship="Respaldo_PulperiaChinaModel.FK_CatArticulo_CatMarca" FromRole="CatArticulo" ToRole="CatMarca" />
+          <NavigationProperty Name="CatProveedor" Relationship="Respaldo_PulperiaChinaModel.FK_CatArticulo_CatProveedor" FromRole="CatArticulo" ToRole="CatProveedor" />
+          <NavigationProperty Name="tblArticulo_Bodega" Relationship="Respaldo_PulperiaChinaModel.FK_tblArticulo_Bodega_CatArticulo" FromRole="CatArticulo" ToRole="tblArticulo_Bodega" />
+          <NavigationProperty Name="tblDetalleVenta" Relationship="Respaldo_PulperiaChinaModel.FK_tblDetalleVenta_tblArticulo" FromRole="CatArticulo" ToRole="tblDetalleVenta" />
+          <NavigationProperty Name="tblDetalleVtaTemp" Relationship="Respaldo_PulperiaChinaModel.FK_tblDetalleVtaTemp_CatArticulo" FromRole="CatArticulo" ToRole="tblDetalleVtaTemp" />
+        </EntityType>
+        <EntityType Name="CatBodega">
+          <Key>
+            <PropertyRef Name="ID_Bodega" />
+          </Key>
+          <Property Name="ID_Bodega" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_Bodega" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Estado" Type="Boolean" />
+          <NavigationProperty Name="tblArticulo_Bodega" Relationship="Respaldo_PulperiaChinaModel.FK_tblArticulo_Bodega_CatBodega" FromRole="CatBodega" ToRole="tblArticulo_Bodega" />
+        </EntityType>
+        <EntityType Name="CatCategoria">
+          <Key>
+            <PropertyRef Name="ID_Categoria" />
+          </Key>
+          <Property Name="ID_Categoria" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_Categoria" Type="String" Nullable="false" MaxLength="80" Unicode="true" FixedLength="false" />
+          <Property Name="Descripcion_Categoria" Type="String" MaxLength="300" Unicode="true" FixedLength="false" />
+          <Property Name="Estado" Type="Boolean" />
+          <NavigationProperty Name="CatArticulo" Relationship="Respaldo_PulperiaChinaModel.FK_CatArticulo_CatCategoria" FromRole="CatCategoria" ToRole="CatArticulo" />
+        </EntityType>
+        <EntityType Name="CatCliente">
+          <Key>
+            <PropertyRef Name="ID_Cliente" />
+          </Key>
+          <Property Name="ID_Cliente" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_Cliente" Type="String" Nullable="false" MaxLength="60" Unicode="true" FixedLength="false" />
+          <Property Name="Apellido1_Cliente" Type="String" Nullable="false" MaxLength="60" Unicode="true" FixedLength="false" />
+          <Property Name="Direccion" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="N__de_Cedula" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Telefono_Celular" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Estado" Type="Boolean" />
+          <Property Name="ID_Municipio" Type="Int32" />
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="UserName" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="CatMunicipio" Relationship="Respaldo_PulperiaChinaModel.FK_tblCliente_tblMunicipio" FromRole="CatCliente" ToRole="CatMunicipio" />
+          <NavigationProperty Name="tblVenta" Relationship="Respaldo_PulperiaChinaModel.FK_tblVenta_tblCliente" FromRole="CatCliente" ToRole="tblVenta" />
+          <NavigationProperty Name="tblVentaCredito" Relationship="Respaldo_PulperiaChinaModel.FK_tblVentaCredito_tblCliente" FromRole="CatCliente" ToRole="tblVentaCredito" />
+        </EntityType>
+        <EntityType Name="CatDepartamento">
+          <Key>
+            <PropertyRef Name="ID_Departamento" />
+          </Key>
+          <Property Name="ID_Departamento" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_Depto" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Estado" Type="Boolean" />
+          <NavigationProperty Name="CatMunicipio" Relationship="Respaldo_PulperiaChinaModel.FK_tblMunicipio_tblDepartamento" FromRole="CatDepartamento" ToRole="CatMunicipio" />
+        </EntityType>
+        <EntityType Name="CatEmpleado">
+          <Key>
+            <PropertyRef Name="IDEmpleado" />
+          </Key>
+          <Property Name="IDEmpleado" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Apellido1" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Apellido2" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Direccion" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Telefono" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="E_Mail" Type="String" Nullable="false" MaxLength="70" Unicode="true" FixedLength="false" />
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="Estado" Type="Boolean" />
+          <Property Name="ImgEmpleado" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="CatMarca">
+          <Key>
+            <PropertyRef Name="IDMarca" />
+          </Key>
+          <Property Name="IDMarca" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_Marca" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Estado" Type="Boolean" />
+          <NavigationProperty Name="CatArticulo" Relationship="Respaldo_PulperiaChinaModel.FK_CatArticulo_CatMarca" FromRole="CatMarca" ToRole="CatArticulo" />
+        </EntityType>
+        <EntityType Name="CatMunicipio">
+          <Key>
+            <PropertyRef Name="ID_Municipio" />
+          </Key>
+          <Property Name="ID_Municipio" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_Municipio" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="ID_Departamento" Type="Int32" />
+          <Property Name="Estado" Type="Boolean" />
+          <NavigationProperty Name="CatCliente" Relationship="Respaldo_PulperiaChinaModel.FK_tblCliente_tblMunicipio" FromRole="CatMunicipio" ToRole="CatCliente" />
+          <NavigationProperty Name="CatDepartamento" Relationship="Respaldo_PulperiaChinaModel.FK_tblMunicipio_tblDepartamento" FromRole="CatMunicipio" ToRole="CatDepartamento" />
+        </EntityType>
+        <EntityType Name="CatProveedor">
+          <Key>
+            <PropertyRef Name="ID_Proveedor" />
+          </Key>
+          <Property Name="ID_Proveedor" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_Proveedor" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Telefono" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Direccion" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Email" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Estado" Type="Boolean" />
+          <Property Name="RutaLogo" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="CatArticulo" Relationship="Respaldo_PulperiaChinaModel.FK_CatArticulo_CatProveedor" FromRole="CatProveedor" ToRole="CatArticulo" />
+          <NavigationProperty Name="tblPedidos" Relationship="Respaldo_PulperiaChinaModel.FK_tblCompra_tblProveedor" FromRole="CatProveedor" ToRole="tblPedidos" />
+        </EntityType>
+        <EntityType Name="CatUsuario">
+          <Key>
+            <PropertyRef Name="ID_Usuario" />
+          </Key>
+          <Property Name="ID_Usuario" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_User" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Apellido1_User" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Apellido2_User" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="UserName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Tipo_Usuario" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="ImgUser" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Empresa">
+          <Key>
+            <PropertyRef Name="ID_Informacion" />
+          </Key>
+          <Property Name="ID_Informacion" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_Empresa" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Propietario" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Admonistrador" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Ubicacion" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Municipio" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Departamento" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Telefono" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Email" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Logo" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="CambioDolar" Type="Single" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tblAbono_Cliente">
+          <Key>
+            <PropertyRef Name="ID_VentaCredito" />
+          </Key>
+          <Property Name="ID_VentaCredito" Type="Int32" Nullable="false" />
+          <Property Name="Fecha_Abono" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Monto_Abono" Type="Single" Nullable="false" />
+          <Property Name="Mora" Type="Single" />
+          <NavigationProperty Name="tblVentaCredito" Relationship="Respaldo_PulperiaChinaModel.FK_tblAbono_tblVentaCredito" FromRole="tblAbono_Cliente" ToRole="tblVentaCredito" />
+          <NavigationProperty Name="tblVentaCredito1" Relationship="Respaldo_PulperiaChinaModel.FK_tblAbono_tblVentaCredito1" FromRole="tblAbono_Cliente" ToRole="tblVentaCredito" />
+        </EntityType>
+        <EntityType Name="tblArticulo_Bodega">
+          <Key>
+            <PropertyRef Name="ID_BodegaArticulo" />
+          </Key>
+          <Property Name="ID_BodegaArticulo" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_Articulo" Type="Int32" Nullable="false" />
+          <Property Name="ID_Bodega" Type="Int32" Nullable="false" />
+          <Property Name="Precio_Compra" Type="Single" Nullable="false" />
+          <Property Name="Precion_Venta" Type="Single" Nullable="false" />
+          <Property Name="Existencia" Type="Int32" Nullable="false" />
+          <Property Name="UserName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="CatArticulo" Relationship="Respaldo_PulperiaChinaModel.FK_tblArticulo_Bodega_CatArticulo" FromRole="tblArticulo_Bodega" ToRole="CatArticulo" />
+          <NavigationProperty Name="CatBodega" Relationship="Respaldo_PulperiaChinaModel.FK_tblArticulo_Bodega_CatBodega" FromRole="tblArticulo_Bodega" ToRole="CatBodega" />
+        </EntityType>
+        <EntityType Name="tblCompra">
+          <Key>
+            <PropertyRef Name="ID_Compra" />
+          </Key>
+          <Property Name="ID_Compra" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Fecha_Compra" Type="DateTime" Precision="3" />
+          <Property Name="Total" Type="Decimal" Precision="19" Scale="4" />
+        </EntityType>
+        <EntityType Name="tblDetalleCompra">
+          <Key>
+            <PropertyRef Name="ID_DetalleCompra" />
+          </Key>
+          <Property Name="ID_DetalleCompra" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_Compra" Type="Int32" />
+          <Property Name="Total" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="SubTotal" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="Cantidad" Type="Int32" />
+          <Property Name="ID_Articulo" Type="Int32" />
+          <Property Name="Precio_Compra" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="Precio_Venta" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="ID_Proveedor" Type="Int32" />
+          <Property Name="ID_Bodega" Type="Int32" />
+          <Property Name="ID_Marca" Type="Int32" />
+          <Property Name="Fecha_Entrega" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="tblDetalleCpaTemp">
+          <Key>
+            <PropertyRef Name="ID_ComraTmp" />
+          </Key>
+          <Property Name="ID_ComraTmp" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="SubTotal" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="Cantidad" Type="Int32" />
+          <Property Name="ID_Articulo" Type="Int32" />
+          <Property Name="Precio_Compra" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="Precio_Venta" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="ID_Proveedor" Type="Int32" />
+          <Property Name="ID_Bodega" Type="Int32" />
+          <Property Name="ID_Marca" Type="Int32" />
+          <Property Name="Fecha_Entrega" Type="DateTime" Precision="0" />
+          <Property Name="UserName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tblDetalleVenta">
+          <Key>
+            <PropertyRef Name="ID_DetalleVenta" />
+          </Key>
+          <Property Name="ID_DetalleVenta" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_Articulo" Type="Int32" />
+          <Property Name="ID_Venta" Type="Int32" />
+          <Property Name="SubTotal" Type="Single" />
+          <Property Name="Estado" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Descuento" Type="Single" />
+          <Property Name="Precio" Type="Single" />
+          <Property Name="Cantidad" Type="Int32" />
+          <Property Name="Garantia" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="CatArticulo" Relationship="Respaldo_PulperiaChinaModel.FK_tblDetalleVenta_tblArticulo" FromRole="tblDetalleVenta" ToRole="CatArticulo" />
+          <NavigationProperty Name="tblVenta" Relationship="Respaldo_PulperiaChinaModel.FK_tblDetalleVenta_tblVenta" FromRole="tblDetalleVenta" ToRole="tblVenta" />
+        </EntityType>
+        <EntityType Name="tblDetalleVtaTemp">
+          <Key>
+            <PropertyRef Name="ID_DetalleTemp" />
+          </Key>
+          <Property Name="ID_DetalleTemp" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_Articulo" Type="Int32" />
+          <Property Name="SubTotal" Type="Single" />
+          <Property Name="Estado" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Descuento" Type="Single" />
+          <Property Name="Precio" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="Cantidad" Type="Int32" />
+          <Property Name="Garantia" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="UserName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="CatArticulo" Relationship="Respaldo_PulperiaChinaModel.FK_tblDetalleVtaTemp_CatArticulo" FromRole="tblDetalleVtaTemp" ToRole="CatArticulo" />
+        </EntityType>
+        <EntityType Name="tblPedidos">
+          <Key>
+            <PropertyRef Name="ID_Compra" />
+          </Key>
+          <Property Name="ID_Compra" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Fecha_Compra" Type="DateTime" Precision="3" />
+          <Property Name="Fecha_Recepcion" Type="DateTime" Precision="3" />
+          <Property Name="Sub_Total" Type="Single" />
+          <Property Name="IVA" Type="Single" />
+          <Property Name="Descuento" Type="Single" />
+          <Property Name="Total" Type="Single" />
+          <Property Name="Pendiente_Aprobacion" Type="String" MaxLength="60" Unicode="true" FixedLength="false" />
+          <Property Name="ID_Proveedor" Type="Int32" Nullable="false" />
+          <Property Name="Estado" Type="Boolean" />
+          <NavigationProperty Name="CatProveedor" Relationship="Respaldo_PulperiaChinaModel.FK_tblCompra_tblProveedor" FromRole="tblPedidos" ToRole="CatProveedor" />
+        </EntityType>
+        <EntityType Name="tblVenta">
+          <Key>
+            <PropertyRef Name="ID_Venta" />
+          </Key>
+          <Property Name="ID_Venta" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Fecha_Vta" Type="DateTime" Precision="3" />
+          <Property Name="ID_Cliente" Type="Int32" />
+          <Property Name="ID_Usuario" Type="Int32" Nullable="false" />
+          <Property Name="NombreCliente" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Total" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+          <Property Name="Anulada" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="CatCliente" Relationship="Respaldo_PulperiaChinaModel.FK_tblVenta_tblCliente" FromRole="tblVenta" ToRole="CatCliente" />
+          <NavigationProperty Name="tblDetalleVenta" Relationship="Respaldo_PulperiaChinaModel.FK_tblDetalleVenta_tblVenta" FromRole="tblVenta" ToRole="tblDetalleVenta" />
+        </EntityType>
+        <EntityType Name="tblVentaCredito">
+          <Key>
+            <PropertyRef Name="ID_Venta" />
+          </Key>
+          <Property Name="ID_Venta" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_Cliente" Type="Int32" />
+          <Property Name="ID_Articulo" Type="Int32" Nullable="false" />
+          <Property Name="Feche_Venta" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Plazos" Type="Single" Nullable="false" />
+          <Property Name="Prima" Type="Single" />
+          <Property Name="Interes" Type="Single" Nullable="false" />
+          <Property Name="Descuento" Type="Single" />
+          <NavigationProperty Name="CatCliente" Relationship="Respaldo_PulperiaChinaModel.FK_tblVentaCredito_tblCliente" FromRole="tblVentaCredito" ToRole="CatCliente" />
+          <NavigationProperty Name="tblAbono_Cliente" Relationship="Respaldo_PulperiaChinaModel.FK_tblAbono_tblVentaCredito" FromRole="tblVentaCredito" ToRole="tblAbono_Cliente" />
+          <NavigationProperty Name="tblAbono_Cliente1" Relationship="Respaldo_PulperiaChinaModel.FK_tblAbono_tblVentaCredito1" FromRole="tblVentaCredito" ToRole="tblAbono_Cliente" />
+        </EntityType>
+        <Association Name="FK_CatArticulo_CatCategoria">
+          <End Role="CatCategoria" Type="Respaldo_PulperiaChinaModel.CatCategoria" Multiplicity="1" />
+          <End Role="CatArticulo" Type="Respaldo_PulperiaChinaModel.CatArticulo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CatCategoria">
+              <PropertyRef Name="ID_Categoria" />
+            </Principal>
+            <Dependent Role="CatArticulo">
+              <PropertyRef Name="ID_Categoria" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CatArticulo_CatMarca">
+          <End Role="CatMarca" Type="Respaldo_PulperiaChinaModel.CatMarca" Multiplicity="0..1" />
+          <End Role="CatArticulo" Type="Respaldo_PulperiaChinaModel.CatArticulo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CatMarca">
+              <PropertyRef Name="IDMarca" />
+            </Principal>
+            <Dependent Role="CatArticulo">
+              <PropertyRef Name="ID_Marca" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CatArticulo_CatProveedor">
+          <End Role="CatProveedor" Type="Respaldo_PulperiaChinaModel.CatProveedor" Multiplicity="1" />
+          <End Role="CatArticulo" Type="Respaldo_PulperiaChinaModel.CatArticulo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CatProveedor">
+              <PropertyRef Name="ID_Proveedor" />
+            </Principal>
+            <Dependent Role="CatArticulo">
+              <PropertyRef Name="ID_Proveedor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblArticulo_Bodega_CatArticulo">
+          <End Role="CatArticulo" Type="Respaldo_PulperiaChinaModel.CatArticulo" Multiplicity="1" />
+          <End Role="tblArticulo_Bodega" Type="Respaldo_PulperiaChinaModel.tblArticulo_Bodega" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CatArticulo">
+              <PropertyRef Name="ID_Articulo" />
+            </Principal>
+            <Dependent Role="tblArticulo_Bodega">
+              <PropertyRef Name="ID_Articulo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblDetalleVenta_tblArticulo">
+          <End Role="CatArticulo" Type="Respaldo_PulperiaChinaModel.CatArticulo" Multiplicity="0..1" />
+          <End Role="tblDetalleVenta" Type="Respaldo_PulperiaChinaModel.tblDetalleVenta" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CatArticulo">
+              <PropertyRef Name="ID_Articulo" />
+            </Principal>
+            <Dependent Role="tblDetalleVenta">
+              <PropertyRef Name="ID_Articulo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblDetalleVtaTemp_CatArticulo">
+          <End Role="CatArticulo" Type="Respaldo_PulperiaChinaModel.CatArticulo" Multiplicity="0..1" />
+          <End Role="tblDetalleVtaTemp" Type="Respaldo_PulperiaChinaModel.tblDetalleVtaTemp" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CatArticulo">
+              <PropertyRef Name="ID_Articulo" />
+            </Principal>
+            <Dependent Role="tblDetalleVtaTemp">
+              <PropertyRef Name="ID_Articulo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblArticulo_Bodega_CatBodega">
+          <End Role="CatBodega" Type="Respaldo_PulperiaChinaModel.CatBodega" Multiplicity="1" />
+          <End Role="tblArticulo_Bodega" Type="Respaldo_PulperiaChinaModel.tblArticulo_Bodega" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CatBodega">
+              <PropertyRef Name="ID_Bodega" />
+            </Principal>
+            <Dependent Role="tblArticulo_Bodega">
+              <PropertyRef Name="ID_Bodega" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblCliente_tblMunicipio">
+          <End Role="CatMunicipio" Type="Respaldo_PulperiaChinaModel.CatMunicipio" Multiplicity="0..1" />
+          <End Role="CatCliente" Type="Respaldo_PulperiaChinaModel.CatCliente" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CatMunicipio">
+              <PropertyRef Name="ID_Municipio" />
+            </Principal>
+            <Dependent Role="CatCliente">
+              <PropertyRef Name="ID_Municipio" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblVenta_tblCliente">
+          <End Role="CatCliente" Type="Respaldo_PulperiaChinaModel.CatCliente" Multiplicity="0..1" />
+          <End Role="tblVenta" Type="Respaldo_PulperiaChinaModel.tblVenta" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CatCliente">
+              <PropertyRef Name="ID_Cliente" />
+            </Principal>
+            <Dependent Role="tblVenta">
+              <PropertyRef Name="ID_Cliente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblVentaCredito_tblCliente">
+          <End Role="CatCliente" Type="Respaldo_PulperiaChinaModel.CatCliente" Multiplicity="0..1" />
+          <End Role="tblVentaCredito" Type="Respaldo_PulperiaChinaModel.tblVentaCredito" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CatCliente">
+              <PropertyRef Name="ID_Cliente" />
+            </Principal>
+            <Dependent Role="tblVentaCredito">
+              <PropertyRef Name="ID_Cliente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblMunicipio_tblDepartamento">
+          <End Role="CatDepartamento" Type="Respaldo_PulperiaChinaModel.CatDepartamento" Multiplicity="0..1" />
+          <End Role="CatMunicipio" Type="Respaldo_PulperiaChinaModel.CatMunicipio" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CatDepartamento">
+              <PropertyRef Name="ID_Departamento" />
+            </Principal>
+            <Dependent Role="CatMunicipio">
+              <PropertyRef Name="ID_Departamento" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblCompra_tblProveedor">
+          <End Role="CatProveedor" Type="Respaldo_PulperiaChinaModel.CatProveedor" Multiplicity="1" />
+          <End Role="tblPedidos" Type="Respaldo_PulperiaChinaModel.tblPedidos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CatProveedor">
+              <PropertyRef Name="ID_Proveedor" />
+            </Principal>
+            <Dependent Role="tblPedidos">
+              <PropertyRef Name="ID_Proveedor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblAbono_tblVentaCredito">
+          <End Role="tblVentaCredito" Type="Respaldo_PulperiaChinaModel.tblVentaCredito" Multiplicity="1" />
+          <End Role="tblAbono_Cliente" Type="Respaldo_PulperiaChinaModel.tblAbono_Cliente" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="tblVentaCredito">
+              <PropertyRef Name="ID_Venta" />
+            </Principal>
+            <Dependent Role="tblAbono_Cliente">
+              <PropertyRef Name="ID_VentaCredito" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblAbono_tblVentaCredito1">
+          <End Role="tblVentaCredito" Type="Respaldo_PulperiaChinaModel.tblVentaCredito" Multiplicity="1" />
+          <End Role="tblAbono_Cliente" Type="Respaldo_PulperiaChinaModel.tblAbono_Cliente" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="tblVentaCredito">
+              <PropertyRef Name="ID_Venta" />
+            </Principal>
+            <Dependent Role="tblAbono_Cliente">
+              <PropertyRef Name="ID_VentaCredito" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblDetalleVenta_tblVenta">
+          <End Role="tblVenta" Type="Respaldo_PulperiaChinaModel.tblVenta" Multiplicity="0..1" />
+          <End Role="tblDetalleVenta" Type="Respaldo_PulperiaChinaModel.tblDetalleVenta" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblVenta">
+              <PropertyRef Name="ID_Venta" />
+            </Principal>
+            <Dependent Role="tblDetalleVenta">
+              <PropertyRef Name="ID_Venta" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Respaldo_PulperiaChinaModelStoreContainer" CdmEntityContainer="Respaldo_PulperiaChinaEntities">
+          <EntitySetMapping Name="CatArticulo">
+            <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.CatArticulo">
+              <MappingFragment StoreEntitySet="CatArticulo">
+                <ScalarProperty Name="ID_Articulo" ColumnName="ID_Articulo" />
+                <ScalarProperty Name="Nombre_Articulo" ColumnName="Nombre_Articulo" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="ID_Categoria" ColumnName="ID_Categoria" />
+                <ScalarProperty Name="ID_Proveedor" ColumnName="ID_Proveedor" />
+                <ScalarProperty Name="ID_Marca" ColumnName="ID_Marca" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="RutaImagen" ColumnName="RutaImagen" />
+                <ScalarProperty Name="Garantia" ColumnName="Garantia" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CatBodega">
+            <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.CatBodega">
+              <MappingFragment StoreEntitySet="CatBodega">
+                <ScalarProperty Name="ID_Bodega" ColumnName="ID_Bodega" />
+                <ScalarProperty Name="Nombre_Bodega" ColumnName="Nombre_Bodega" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CatCategoria">
+            <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.CatCategoria">
+              <MappingFragment StoreEntitySet="CatCategoria">
+                <ScalarProperty Name="ID_Categoria" ColumnName="ID_Categoria" />
+                <ScalarProperty Name="Nombre_Categoria" ColumnName="Nombre_Categoria" />
+                <ScalarProperty Name="Descripcion_Categoria" ColumnName="Descripcion_Categoria" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CatCliente">
+            <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.CatCliente">
+              <MappingFragment StoreEntitySet="CatCliente">
+                <ScalarProperty Name="ID_Cliente" ColumnName="ID_Cliente" />
+                <ScalarProperty Name="Nombre_Cliente" ColumnName="Nombre_Cliente" />
+                <ScalarProperty Name="Apellido1_Cliente" ColumnName="Apellido1_Cliente" />
+                <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+                <ScalarProperty Name="N__de_Cedula" ColumnName="N° de Cedula" />
+                <ScalarProperty Name="Telefono_Celular" ColumnName="Telefono_Celular" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="ID_Municipio" ColumnName="ID_Municipio" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CatDepartamento">
+            <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.CatDepartamento">
+              <MappingFragment StoreEntitySet="CatDepartamento">
+                <ScalarProperty Name="ID_Departamento" ColumnName="ID_Departamento" />
+                <ScalarProperty Name="Nombre_Depto" ColumnName="Nombre_Depto" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CatEmpleado">
+            <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.CatEmpleado">
+              <MappingFragment StoreEntitySet="CatEmpleado">
+                <ScalarProperty Name="IDEmpleado" ColumnName="IDEmpleado" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Apellido1" ColumnName="Apellido1" />
+                <ScalarProperty Name="Apellido2" ColumnName="Apellido2" />
+                <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+                <ScalarProperty Name="E_Mail" ColumnName="E-Mail" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="ImgEmpleado" ColumnName="ImgEmpleado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CatMarca">
+            <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.CatMarca">
+              <MappingFragment StoreEntitySet="CatMarca">
+                <ScalarProperty Name="IDMarca" ColumnName="IDMarca" />
+                <ScalarProperty Name="Nombre_Marca" ColumnName="Nombre_Marca" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CatMunicipio">
+            <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.CatMunicipio">
+              <MappingFragment StoreEntitySet="CatMunicipio">
+                <ScalarProperty Name="ID_Municipio" ColumnName="ID_Municipio" />
+                <ScalarProperty Name="Nombre_Municipio" ColumnName="Nombre_Municipio" />
+                <ScalarProperty Name="ID_Departamento" ColumnName="ID_Departamento" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CatProveedor">
+            <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.CatProveedor">
+              <MappingFragment StoreEntitySet="CatProveedor">
+                <ScalarProperty Name="ID_Proveedor" ColumnName="ID_Proveedor" />
+                <ScalarProperty Name="Nombre_Proveedor" ColumnName="Nombre_Proveedor" />
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+                <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="RutaLogo" ColumnName="RutaLogo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CatUsuario">
+            <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.CatUsuario">
+              <MappingFragment StoreEntitySet="CatUsuario">
+                <ScalarProperty Name="ID_Usuario" ColumnName="ID_Usuario" />
+                <ScalarProperty Name="Nombre_User" ColumnName="Nombre_User" />
+                <ScalarProperty Name="Apellido1_User" ColumnName="Apellido1_User" />
+                <ScalarProperty Name="Apellido2_User" ColumnName="Apellido2_User" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Tipo_Usuario" ColumnName="Tipo_Usuario" />
+                <ScalarProperty Name="ImgUser" ColumnName="ImgUser" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Empresa">
+            <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.Empresa">
+              <MappingFragment StoreEntitySet="Empresa">
+                <ScalarProperty Name="ID_Informacion" ColumnName="ID_Informacion" />
+                <ScalarProperty Name="Nombre_Empresa" ColumnName="Nombre_Empresa" />
+                <ScalarProperty Name="Propietario" ColumnName="Propietario" />
+                <ScalarProperty Name="Admonistrador" ColumnName="Admonistrador" />
+                <ScalarProperty Name="Ubicacion" ColumnName="Ubicacion" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Municipio" ColumnName="Municipio" />
+                <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Logo" ColumnName="Logo" />
+                <ScalarProperty Name="CambioDolar" ColumnName="CambioDolar" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblAbono_Cliente">
+            <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.tblAbono_Cliente">
+              <MappingFragment StoreEntitySet="tblAbono_Cliente">
+                <ScalarProperty Name="ID_VentaCredito" ColumnName="ID_VentaCredito" />
+                <ScalarProperty Name="Fecha_Abono" ColumnName="Fecha_Abono" />
+                <ScalarProperty Name="Monto_Abono" ColumnName="Monto_Abono" />
+                <ScalarProperty Name="Mora" ColumnName="Mora" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblArticulo_Bodega">
+            <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.tblArticulo_Bodega">
+              <MappingFragment StoreEntitySet="tblArticulo_Bodega">
+                <ScalarProperty Name="ID_BodegaArticulo" ColumnName="ID_BodegaArticulo" />
+                <ScalarProperty Name="ID_Articulo" ColumnName="ID_Articulo" />
+                <ScalarProperty Name="ID_Bodega" ColumnName="ID_Bodega" />
+                <ScalarProperty Name="Precio_Compra" ColumnName="Precio_Compra" />
+                <ScalarProperty Name="Precion_Venta" ColumnName="Precion_Venta" />
+                <ScalarProperty Name="Existencia" ColumnName="Existencia" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblCompra">
+            <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.tblCompra">
+              <MappingFragment StoreEntitySet="tblCompra">
+                <ScalarProperty Name="ID_Compra" ColumnName="ID_Compra" />
+                <ScalarProperty Name="Fecha_Compra" ColumnName="Fecha_Compra" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblDetalleCompra">
+            <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.tblDetalleCompra">
+              <MappingFragment StoreEntitySet="tblDetalleCompra">
+                <ScalarProperty Name="ID_DetalleCompra" ColumnName="ID_DetalleCompra" />
+                <ScalarProperty Name="ID_Compra" ColumnName="ID_Compra" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+                <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+                <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+                <ScalarProperty Name="ID_Articulo" ColumnName="ID_Articulo" />
+                <ScalarProperty Name="Precio_Compra" ColumnName="Precio_Compra" />
+                <ScalarProperty Name="Precio_Venta" ColumnName="Precio_Venta" />
+                <ScalarProperty Name="ID_Proveedor" ColumnName="ID_Proveedor" />
+                <ScalarProperty Name="ID_Bodega" ColumnName="ID_Bodega" />
+                <ScalarProperty Name="ID_Marca" ColumnName="ID_Marca" />
+                <ScalarProperty Name="Fecha_Entrega" ColumnName="Fecha_Entrega" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblDetalleCpaTemp">
+            <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.tblDetalleCpaTemp">
+              <MappingFragment StoreEntitySet="tblDetalleCpaTemp">
+                <ScalarProperty Name="ID_ComraTmp" ColumnName="ID_ComraTmp" />
+                <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+                <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+                <ScalarProperty Name="ID_Articulo" ColumnName="ID_Articulo" />
+                <ScalarProperty Name="Precio_Compra" ColumnName="Precio_Compra" />
+                <ScalarProperty Name="Precio_Venta" ColumnName="Precio_Venta" />
+                <ScalarProperty Name="ID_Proveedor" ColumnName="ID_Proveedor" />
+                <ScalarProperty Name="ID_Bodega" ColumnName="ID_Bodega" />
+                <ScalarProperty Name="ID_Marca" ColumnName="ID_Marca" />
+                <ScalarProperty Name="Fecha_Entrega" ColumnName="Fecha_Entrega" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblDetalleVenta">
+            <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.tblDetalleVenta">
+              <MappingFragment StoreEntitySet="tblDetalleVenta">
+                <ScalarProperty Name="ID_DetalleVenta" ColumnName="ID_DetalleVenta" />
+                <ScalarProperty Name="ID_Articulo" ColumnName="ID_Articulo" />
+                <ScalarProperty Name="ID_Venta" ColumnName="ID_Venta" />
+                <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="Descuento" ColumnName="Descuento" />
+                <ScalarProperty Name="Precio" ColumnName="Precio" />
+                <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+                <ScalarProperty Name="Garantia" ColumnName="Garantia" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblDetalleVtaTemp">
+            <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.tblDetalleVtaTemp">
+              <MappingFragment StoreEntitySet="tblDetalleVtaTemp">
+                <ScalarProperty Name="ID_DetalleTemp" ColumnName="ID_DetalleTemp" />
+                <ScalarProperty Name="ID_Articulo" ColumnName="ID_Articulo" />
+                <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="Descuento" ColumnName="Descuento" />
+                <ScalarProperty Name="Precio" ColumnName="Precio" />
+                <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+                <ScalarProperty Name="Garantia" ColumnName="Garantia" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblPedidos">
+            <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.tblPedidos">
+              <MappingFragment StoreEntitySet="tblPedidos">
+                <ScalarProperty Name="ID_Compra" ColumnName="ID_Compra" />
+                <ScalarProperty Name="Fecha_Compra" ColumnName="Fecha_Compra" />
+                <ScalarProperty Name="Fecha_Recepcion" ColumnName="Fecha_Recepcion" />
+                <ScalarProperty Name="Sub_Total" ColumnName="Sub-Total" />
+                <ScalarProperty Name="IVA" ColumnName="IVA" />
+                <ScalarProperty Name="Descuento" ColumnName="Descuento" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+                <ScalarProperty Name="Pendiente_Aprobacion" ColumnName="Pendiente_Aprobacion" />
+                <ScalarProperty Name="ID_Proveedor" ColumnName="ID_Proveedor" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblVenta">
+            <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.tblVenta">
+              <MappingFragment StoreEntitySet="tblVenta">
+                <ScalarProperty Name="ID_Venta" ColumnName="ID_Venta" />
+                <ScalarProperty Name="Fecha_Vta" ColumnName="Fecha_Vta" />
+                <ScalarProperty Name="ID_Cliente" ColumnName="ID_Cliente" />
+                <ScalarProperty Name="ID_Usuario" ColumnName="ID_Usuario" />
+                <ScalarProperty Name="NombreCliente" ColumnName="NombreCliente" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+                <ScalarProperty Name="Anulada" ColumnName="Anulada" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblVentaCredito">
+            <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.tblVentaCredito">
+              <MappingFragment StoreEntitySet="tblVentaCredito">
+                <ScalarProperty Name="ID_Venta" ColumnName="ID_Venta" />
+                <ScalarProperty Name="ID_Cliente" ColumnName="ID_Cliente" />
+                <ScalarProperty Name="ID_Articulo" ColumnName="ID_Articulo" />
+                <ScalarProperty Name="Feche_Venta" ColumnName="Feche_Venta" />
+                <ScalarProperty Name="Plazos" ColumnName="Plazos" />
+                <ScalarProperty Name="Prima" ColumnName="Prima" />
+                <ScalarProperty Name="Interes" ColumnName="Interes" />
+                <ScalarProperty Name="Descuento" ColumnName="Descuento" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

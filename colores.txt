@@ -1,0 +1,2 @@
+menu superior: #a34f9e
+menu izquierdo: #b568b0 

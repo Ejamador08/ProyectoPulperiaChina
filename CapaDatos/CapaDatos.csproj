@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{89AABCEA-806C-488E-92BB-4B8224E96F1B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapaDatos</RootNamespace>
+    <AssemblyName>CapaDatos</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\packages\AjaxControlToolkit.16.1.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CatArticulo.cs">
+      <DependentUpon>PulperiaChina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CatBodega.cs">
+      <DependentUpon>PulperiaChina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CatCategoria.cs">
+      <DependentUpon>PulperiaChina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CatCliente.cs">
+      <DependentUpon>PulperiaChina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CatDepartamento.cs">
+      <DependentUpon>PulperiaChina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CatEmpleado.cs">
+      <DependentUpon>PulperiaChina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CatMarca.cs">
+      <DependentUpon>PulperiaChina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CatMunicipio.cs">
+      <DependentUpon>PulperiaChina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CatProveedor.cs">
+      <DependentUpon>PulperiaChina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CatUsuario.cs">
+      <DependentUpon>PulperiaChina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClassDatArticulo.cs" />
+    <Compile Include="ClassDatBodega.cs" />
+    <Compile Include="ClassDatBodegaArticulo.cs" />
+    <Compile Include="ClassDatCategoria.cs" />
+    <Compile Include="ClassDatCliente.cs" />
+    <Compile Include="ClassDatCompra.cs" />
+    <Compile Include="ClassDatDepartamento.cs" />
+    <Compile Include="ClassDatEmpleado.cs" />
+    <Compile Include="ClassDatEmpresa.cs" />
+    <Compile Include="ClassDatFacturacion.cs" />
+    <Compile Include="ClassDatMarca.cs" />
+    <Compile Include="ClassDatMuncipio.cs" />
+    <Compile Include="ClassDatProveedor.cs" />
+    <Compile Include="ClassDatUsuario.cs" />
+    <Compile Include="Empresa.cs">
+      <DependentUpon>PulperiaChina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PulperiaChina.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PulperiaChina.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PulperiaChina.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PulperiaChina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PulperiaChina.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PulperiaChina.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>PulperiaChina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblAbono_Cliente.cs">
+      <DependentUpon>PulperiaChina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblArticulo_Bodega.cs">
+      <DependentUpon>PulperiaChina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblCompra.cs">
+      <DependentUpon>PulperiaChina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDetalleCompra.cs">
+      <DependentUpon>PulperiaChina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDetalleCpaTemp.cs">
+      <DependentUpon>PulperiaChina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDetalleVenta.cs">
+      <DependentUpon>PulperiaChina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblDetalleVtaTemp.cs">
+      <DependentUpon>PulperiaChina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblPedidos.cs">
+      <DependentUpon>PulperiaChina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblVenta.cs">
+      <DependentUpon>PulperiaChina.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblVentaCredito.cs">
+      <DependentUpon>PulperiaChina.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <EntityDeploy Include="PulperiaChina.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PulperiaChina.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="PulperiaChina.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PulperiaChina.edmx</DependentUpon>
+      <LastGenOutput>PulperiaChina.Context.cs</LastGenOutput>
+    </None>
+    <None Include="PulperiaChina.edmx.diagram">
+      <DependentUpon>PulperiaChina.edmx</DependentUpon>
+    </None>
+    <None Include="PulperiaChina.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PulperiaChina.edmx</DependentUpon>
+      <LastGenOutput>PulperiaChina.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaEntidad\CapaEntidad.csproj">
+      <Project>{ecfc972d-409e-49f6-ba33-fdc9f2ccf015}</Project>
+      <Name>CapaEntidad</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

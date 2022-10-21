@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="022efef6121745bebaa0aab082fd4e77" Name="Diagrama1">
+        <EntityTypeShape EntityType="Respaldo_PulperiaChinaModel.CatArticulo" Width="1.5" PointX="3" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Respaldo_PulperiaChinaModel.CatBodega" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Respaldo_PulperiaChinaModel.CatCategoria" Width="1.5" PointX="0.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Respaldo_PulperiaChinaModel.CatCliente" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Respaldo_PulperiaChinaModel.CatDepartamento" Width="1.5" PointX="1.5" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Respaldo_PulperiaChinaModel.CatEmpleado" Width="1.5" PointX="10.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Respaldo_PulperiaChinaModel.CatMarca" Width="1.5" PointX="0.75" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="Respaldo_PulperiaChinaModel.CatMunicipio" Width="1.5" PointX="1.5" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Respaldo_PulperiaChinaModel.CatProveedor" Width="1.5" PointX="0.75" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Respaldo_PulperiaChinaModel.CatUsuario" Width="1.5" PointX="10.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Respaldo_PulperiaChinaModel.Empresa" Width="1.5" PointX="10.75" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Respaldo_PulperiaChinaModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Respaldo_PulperiaChinaModel.tblAbono_Cliente" Width="1.5" PointX="8.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Respaldo_PulperiaChinaModel.tblArticulo_Bodega" Width="1.5" PointX="5.25" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Respaldo_PulperiaChinaModel.tblCompra" Width="1.5" PointX="7.75" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Respaldo_PulperiaChinaModel.tblDetalleCompra" Width="1.5" PointX="12.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Respaldo_PulperiaChinaModel.tblDetalleCpaTemp" Width="1.5" PointX="12.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Respaldo_PulperiaChinaModel.tblDetalleVenta" Width="1.5" PointX="8.25" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Respaldo_PulperiaChinaModel.tblDetalleVtaTemp" Width="1.5" PointX="5.25" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Respaldo_PulperiaChinaModel.tblPedidos" Width="1.5" PointX="3" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Respaldo_PulperiaChinaModel.tblVenta" Width="1.5" PointX="6.125" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Respaldo_PulperiaChinaModel.tblVentaCredito" Width="1.5" PointX="6" PointY="5" IsExpanded="true" />
+        <AssociationConnector Association="Respaldo_PulperiaChinaModel.FK_CatArticulo_CatCategoria" ManuallyRouted="false" />
+        <AssociationConnector Association="Respaldo_PulperiaChinaModel.FK_CatArticulo_CatMarca" ManuallyRouted="false" />
+        <AssociationConnector Association="Respaldo_PulperiaChinaModel.FK_CatArticulo_CatProveedor" ManuallyRouted="false" />
+        <AssociationConnector Association="Respaldo_PulperiaChinaModel.FK_tblArticulo_Bodega_CatArticulo" ManuallyRouted="false" />
+        <AssociationConnector Association="Respaldo_PulperiaChinaModel.FK_tblDetalleVenta_tblArticulo" ManuallyRouted="false" />
+        <AssociationConnector Association="Respaldo_PulperiaChinaModel.FK_tblDetalleVtaTemp_CatArticulo" ManuallyRouted="false" />
+        <AssociationConnector Association="Respaldo_PulperiaChinaModel.FK_tblArticulo_Bodega_CatBodega" ManuallyRouted="false" />
+        <AssociationConnector Association="Respaldo_PulperiaChinaModel.FK_tblCliente_tblMunicipio" ManuallyRouted="false" />
+        <AssociationConnector Association="Respaldo_PulperiaChinaModel.FK_tblVenta_tblCliente" ManuallyRouted="false" />
+        <AssociationConnector Association="Respaldo_PulperiaChinaModel.FK_tblVentaCredito_tblCliente" ManuallyRouted="false" />
+        <AssociationConnector Association="Respaldo_PulperiaChinaModel.FK_tblMunicipio_tblDepartamento" ManuallyRouted="false" />
+        <AssociationConnector Association="Respaldo_PulperiaChinaModel.FK_tblCompra_tblProveedor" ManuallyRouted="false" />
+        <AssociationConnector Association="Respaldo_PulperiaChinaModel.FK_tblAbono_tblVentaCredito" ManuallyRouted="false" />
+        <AssociationConnector Association="Respaldo_PulperiaChinaModel.FK_tblAbono_tblVentaCredito1" ManuallyRouted="false" />
+        <AssociationConnector Association="Respaldo_PulperiaChinaModel.FK_tblDetalleVenta_tblVenta" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

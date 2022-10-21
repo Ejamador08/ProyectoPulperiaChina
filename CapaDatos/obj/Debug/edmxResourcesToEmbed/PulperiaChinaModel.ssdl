@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Pulperia_ChinaModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="Pulperia_ChinaModelStoreContainer">
+    <EntitySet Name="sysdiagrams" EntityType="Pulperia_ChinaModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblArticulo" EntityType="Pulperia_ChinaModel.Store.tblArticulo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblCategoria" EntityType="Pulperia_ChinaModel.Store.tblCategoria" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblCliente" EntityType="Pulperia_ChinaModel.Store.tblCliente" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblCompra" EntityType="Pulperia_ChinaModel.Store.tblCompra" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblDepartamento" EntityType="Pulperia_ChinaModel.Store.tblDepartamento" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblDetalleVenta" EntityType="Pulperia_ChinaModel.Store.tblDetalleVenta" store:Type="Tables" store:Schema="dbo" store:Name="tblDetalleVenta">
+      <DefiningQuery>SELECT 
+      [tblDetalleVenta].[ID_DetalleVenta] AS [ID_DetalleVenta], 
+      [tblDetalleVenta].[ID_Articulo] AS [ID_Articulo], 
+      [tblDetalleVenta].[ID_Venta] AS [ID_Venta], 
+      [tblDetalleVenta].[Cantidad] AS [Cantidad], 
+      [tblDetalleVenta].[Precio] AS [Precio], 
+      [tblDetalleVenta].[IVA] AS [IVA]
+      FROM [dbo].[tblDetalleVenta] AS [tblDetalleVenta]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblMunicipio" EntityType="Pulperia_ChinaModel.Store.tblMunicipio" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblProveedor" EntityType="Pulperia_ChinaModel.Store.tblProveedor" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblUsuario" EntityType="Pulperia_ChinaModel.Store.tblUsuario" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblVenta" EntityType="Pulperia_ChinaModel.Store.tblVenta" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblVentaCredito" EntityType="Pulperia_ChinaModel.Store.tblVentaCredito" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_tblArticulo_tblCategoria" Association="Pulperia_ChinaModel.Store.FK_tblArticulo_tblCategoria">
+      <End Role="tblCategoria" EntitySet="tblCategoria" />
+      <End Role="tblArticulo" EntitySet="tblArticulo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblArticulo_tblProveedor" Association="Pulperia_ChinaModel.Store.FK_tblArticulo_tblProveedor">
+      <End Role="tblProveedor" EntitySet="tblProveedor" />
+      <End Role="tblArticulo" EntitySet="tblArticulo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblCliente_tblMunicipio" Association="Pulperia_ChinaModel.Store.FK_tblCliente_tblMunicipio">
+      <End Role="tblMunicipio" EntitySet="tblMunicipio" />
+      <End Role="tblCliente" EntitySet="tblCliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblCompra_tblProveedor" Association="Pulperia_ChinaModel.Store.FK_tblCompra_tblProveedor">
+      <End Role="tblProveedor" EntitySet="tblProveedor" />
+      <End Role="tblCompra" EntitySet="tblCompra" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblDetalleVenta_tblArticulo" Association="Pulperia_ChinaModel.Store.FK_tblDetalleVenta_tblArticulo">
+      <End Role="tblArticulo" EntitySet="tblArticulo" />
+      <End Role="tblDetalleVenta" EntitySet="tblDetalleVenta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblDetalleVenta_tblVenta" Association="Pulperia_ChinaModel.Store.FK_tblDetalleVenta_tblVenta">
+      <End Role="tblVenta" EntitySet="tblVenta" />
+      <End Role="tblDetalleVenta" EntitySet="tblDetalleVenta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblMunicipio_tblDepartamento" Association="Pulperia_ChinaModel.Store.FK_tblMunicipio_tblDepartamento">
+      <End Role="tblDepartamento" EntitySet="tblDepartamento" />
+      <End Role="tblMunicipio" EntitySet="tblMunicipio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblVenta_tblCliente" Association="Pulperia_ChinaModel.Store.FK_tblVenta_tblCliente">
+      <End Role="tblCliente" EntitySet="tblCliente" />
+      <End Role="tblVenta" EntitySet="tblVenta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblVenta_tblUsuario" Association="Pulperia_ChinaModel.Store.FK_tblVenta_tblUsuario">
+      <End Role="tblUsuario" EntitySet="tblUsuario" />
+      <End Role="tblVenta" EntitySet="tblVenta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblVentaCredito_tblCliente" Association="Pulperia_ChinaModel.Store.FK_tblVentaCredito_tblCliente">
+      <End Role="tblCliente" EntitySet="tblCliente" />
+      <End Role="tblVentaCredito" EntitySet="tblVentaCredito" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="tblArticulo">
+    <Key>
+      <PropertyRef Name="ID_Articulo" />
+    </Key>
+    <Property Name="ID_Articulo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Articulo" Type="nvarchar" MaxLength="30" />
+    <Property Name="Precio" Type="int" />
+    <Property Name="ID_Categoria" Type="int" />
+    <Property Name="ID_Proveedor" Type="int" />
+    <Property Name="Activo" Type="nvarchar" MaxLength="60" />
+    <Property Name="RutaImagen" Type="nvarchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="tblCategoria">
+    <Key>
+      <PropertyRef Name="ID_Categoria" />
+    </Key>
+    <Property Name="ID_Categoria" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Categoria" Type="nvarchar" MaxLength="30" />
+    <Property Name="Descripcion_Categoria" Type="nvarchar" MaxLength="60" />
+  </EntityType>
+  <EntityType Name="tblCliente">
+    <Key>
+      <PropertyRef Name="ID_Cliente" />
+    </Key>
+    <Property Name="ID_Cliente" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Cliente" Type="nvarchar" MaxLength="30" />
+    <Property Name="Apellido1_Cliente" Type="nvarchar" MaxLength="30" />
+    <Property Name="Direccion" Type="nvarchar" MaxLength="60" />
+    <Property Name="N° de Cedula" Type="nvarchar" MaxLength="30" />
+    <Property Name="Telefono_Celular" Type="varchar" MaxLength="20" />
+    <Property Name="Estado" Type="bit" />
+    <Property Name="ID_Municipio" Type="int" />
+    <Property Name="Lìmite" Type="float" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="tblCompra">
+    <Key>
+      <PropertyRef Name="ID_Compra" />
+    </Key>
+    <Property Name="ID_Compra" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Fecha_Compra" Type="datetime" />
+    <Property Name="Descripcion_Articulo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Pendiente_Aprobacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="ID_Proveedor" Type="int" />
+  </EntityType>
+  <EntityType Name="tblDepartamento">
+    <Key>
+      <PropertyRef Name="ID_Departamento" />
+    </Key>
+    <Property Name="ID_Departamento" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Depto" Type="nvarchar" MaxLength="30" />
+  </EntityType>
+  <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'Pulperia_China.dbo.tblDetalleVenta' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+  <EntityType Name="tblDetalleVenta">
+    <Key>
+      <PropertyRef Name="ID_DetalleVenta" />
+    </Key>
+    <Property Name="ID_DetalleVenta" Type="int" Nullable="false" />
+    <Property Name="ID_Articulo" Type="int" />
+    <Property Name="ID_Venta" Type="int" />
+    <Property Name="Cantidad" Type="int" />
+    <Property Name="Precio" Type="money" />
+    <Property Name="IVA" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="tblMunicipio">
+    <Key>
+      <PropertyRef Name="ID_Municipio" />
+    </Key>
+    <Property Name="ID_Municipio" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Municipio" Type="nvarchar" MaxLength="30" />
+    <Property Name="ID_Departamento" Type="int" />
+  </EntityType>
+  <EntityType Name="tblProveedor">
+    <Key>
+      <PropertyRef Name="ID_Proveedor" />
+    </Key>
+    <Property Name="ID_Proveedor" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Proveedor" Type="nvarchar" MaxLength="50" />
+    <Property Name="Telefono" Type="varchar" MaxLength="50" />
+    <Property Name="Direccion" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblUsuario">
+    <Key>
+      <PropertyRef Name="ID_Usuario" />
+    </Key>
+    <Property Name="ID_Usuario" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Contraseña" Type="nvarchar" MaxLength="30" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="30" />
+    <Property Name="Apellido" Type="nvarchar" MaxLength="30" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="30" />
+    <Property Name="Tipo_Usuario" Type="nvarchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="tblVenta">
+    <Key>
+      <PropertyRef Name="ID_Venta" />
+    </Key>
+    <Property Name="ID_Venta" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Fecha_Vta" Type="datetime" />
+    <Property Name="ID_Cliente" Type="int" />
+    <Property Name="ID_Usuario" Type="int" />
+    <Property Name="Anulada" Type="nvarchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="tblVentaCredito">
+    <Key>
+      <PropertyRef Name="ID_VentaCredito" />
+    </Key>
+    <Property Name="ID_VentaCredito" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ID_Cliente" Type="int" />
+    <Property Name="Feche_Venta" Type="date" />
+    <Property Name="Plazos" Type="nvarchar" MaxLength="50" />
+    <Property Name="Prima" Type="nchar" MaxLength="10" />
+    <Property Name="Interes" Type="nchar" MaxLength="10" />
+    <Property Name="Fecha_Inicial" Type="date" />
+    <Property Name="Saldo_Inicial" Type="nchar" MaxLength="10" />
+    <Property Name="Saldo_Final" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <Association Name="FK_tblArticulo_tblCategoria">
+    <End Role="tblCategoria" Type="Pulperia_ChinaModel.Store.tblCategoria" Multiplicity="0..1" />
+    <End Role="tblArticulo" Type="Pulperia_ChinaModel.Store.tblArticulo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCategoria">
+        <PropertyRef Name="ID_Categoria" />
+      </Principal>
+      <Dependent Role="tblArticulo">
+        <PropertyRef Name="ID_Categoria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblArticulo_tblProveedor">
+    <End Role="tblProveedor" Type="Pulperia_ChinaModel.Store.tblProveedor" Multiplicity="0..1" />
+    <End Role="tblArticulo" Type="Pulperia_ChinaModel.Store.tblArticulo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblProveedor">
+        <PropertyRef Name="ID_Proveedor" />
+      </Principal>
+      <Dependent Role="tblArticulo">
+        <PropertyRef Name="ID_Proveedor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblCliente_tblMunicipio">
+    <End Role="tblMunicipio" Type="Pulperia_ChinaModel.Store.tblMunicipio" Multiplicity="0..1" />
+    <End Role="tblCliente" Type="Pulperia_ChinaModel.Store.tblCliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblMunicipio">
+        <PropertyRef Name="ID_Municipio" />
+      </Principal>
+      <Dependent Role="tblCliente">
+        <PropertyRef Name="ID_Municipio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblCompra_tblProveedor">
+    <End Role="tblProveedor" Type="Pulperia_ChinaModel.Store.tblProveedor" Multiplicity="0..1" />
+    <End Role="tblCompra" Type="Pulperia_ChinaModel.Store.tblCompra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblProveedor">
+        <PropertyRef Name="ID_Proveedor" />
+      </Principal>
+      <Dependent Role="tblCompra">
+        <PropertyRef Name="ID_Proveedor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblDetalleVenta_tblArticulo">
+    <End Role="tblArticulo" Type="Pulperia_ChinaModel.Store.tblArticulo" Multiplicity="0..1" />
+    <End Role="tblDetalleVenta" Type="Pulperia_ChinaModel.Store.tblDetalleVenta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblArticulo">
+        <PropertyRef Name="ID_Articulo" />
+      </Principal>
+      <Dependent Role="tblDetalleVenta">
+        <PropertyRef Name="ID_Articulo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblDetalleVenta_tblVenta">
+    <End Role="tblVenta" Type="Pulperia_ChinaModel.Store.tblVenta" Multiplicity="0..1" />
+    <End Role="tblDetalleVenta" Type="Pulperia_ChinaModel.Store.tblDetalleVenta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblVenta">
+        <PropertyRef Name="ID_Venta" />
+      </Principal>
+      <Dependent Role="tblDetalleVenta">
+        <PropertyRef Name="ID_Venta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblMunicipio_tblDepartamento">
+    <End Role="tblDepartamento" Type="Pulperia_ChinaModel.Store.tblDepartamento" Multiplicity="0..1" />
+    <End Role="tblMunicipio" Type="Pulperia_ChinaModel.Store.tblMunicipio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblDepartamento">
+        <PropertyRef Name="ID_Departamento" />
+      </Principal>
+      <Dependent Role="tblMunicipio">
+        <PropertyRef Name="ID_Departamento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblVenta_tblCliente">
+    <End Role="tblCliente" Type="Pulperia_ChinaModel.Store.tblCliente" Multiplicity="0..1" />
+    <End Role="tblVenta" Type="Pulperia_ChinaModel.Store.tblVenta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCliente">
+        <PropertyRef Name="ID_Cliente" />
+      </Principal>
+      <Dependent Role="tblVenta">
+        <PropertyRef Name="ID_Cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblVenta_tblUsuario">
+    <End Role="tblUsuario" Type="Pulperia_ChinaModel.Store.tblUsuario" Multiplicity="0..1" />
+    <End Role="tblVenta" Type="Pulperia_ChinaModel.Store.tblVenta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblUsuario">
+        <PropertyRef Name="ID_Usuario" />
+      </Principal>
+      <Dependent Role="tblVenta">
+        <PropertyRef Name="ID_Usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblVentaCredito_tblCliente">
+    <End Role="tblCliente" Type="Pulperia_ChinaModel.Store.tblCliente" Multiplicity="0..1" />
+    <End Role="tblVentaCredito" Type="Pulperia_ChinaModel.Store.tblVentaCredito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCliente">
+        <PropertyRef Name="ID_Cliente" />
+      </Principal>
+      <Dependent Role="tblVentaCredito">
+        <PropertyRef Name="ID_Cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <!--Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'Pulperia_China.dbo.tblAbono' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="tblAbono">
+        <Property Name="ID_VentaCredito" Type="int" />
+        <Property Name="Fecha_Abono" Type="nchar" MaxLength="10" />
+        <Property Name="Monto_Abono" Type="nchar" MaxLength="10" />
+      </EntityType>
+      Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'Pulperia_China.dbo.tblCaja' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="tblCaja">
+        <Property Name="Fecha_Apertura" Type="date" />
+        <Property Name="Hora_Apertura" Type="time" />
+        <Property Name="Monto_Apertura" Type="float" />
+        <Property Name="Fecha_Cierre" Type="date" />
+        <Property Name="Hora_Cierre" Type="time" />
+        <Property Name="Monto_Cierre" Type="float" />
+      </EntityType>
+      Se encontraron errores durante la generación:
+      advertencia 6013: La tabla o vista 'Pulperia_China.dbo.tblDetalleVentaCredito' no tiene una clave principal definida y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+      
+      <EntityType Name="tblDetalleVentaCredito">
+        <Property Name="ID_VentaCredito" Type="int" />
+        <Property Name="ID_Producto" Type="int" />
+        <Property Name="Cantidad" Type="nchar" MaxLength="10" />
+        <Property Name="Precio" Type="nchar" MaxLength="10" />
+        <Property Name="IVA" Type="nchar" MaxLength="10" />
+      </EntityType>-->
+</Schema>

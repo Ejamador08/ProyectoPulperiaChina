@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Respaldo_PulperiaChinaModelStoreContainer" CdmEntityContainer="Respaldo_PulperiaChinaEntities">
+    <EntitySetMapping Name="CatArticulo">
+      <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.CatArticulo">
+        <MappingFragment StoreEntitySet="CatArticulo">
+          <ScalarProperty Name="ID_Articulo" ColumnName="ID_Articulo" />
+          <ScalarProperty Name="Nombre_Articulo" ColumnName="Nombre_Articulo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="ID_Categoria" ColumnName="ID_Categoria" />
+          <ScalarProperty Name="ID_Proveedor" ColumnName="ID_Proveedor" />
+          <ScalarProperty Name="ID_Marca" ColumnName="ID_Marca" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="RutaImagen" ColumnName="RutaImagen" />
+          <ScalarProperty Name="Garantia" ColumnName="Garantia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CatBodega">
+      <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.CatBodega">
+        <MappingFragment StoreEntitySet="CatBodega">
+          <ScalarProperty Name="ID_Bodega" ColumnName="ID_Bodega" />
+          <ScalarProperty Name="Nombre_Bodega" ColumnName="Nombre_Bodega" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CatCategoria">
+      <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.CatCategoria">
+        <MappingFragment StoreEntitySet="CatCategoria">
+          <ScalarProperty Name="ID_Categoria" ColumnName="ID_Categoria" />
+          <ScalarProperty Name="Nombre_Categoria" ColumnName="Nombre_Categoria" />
+          <ScalarProperty Name="Descripcion_Categoria" ColumnName="Descripcion_Categoria" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CatCliente">
+      <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.CatCliente">
+        <MappingFragment StoreEntitySet="CatCliente">
+          <ScalarProperty Name="ID_Cliente" ColumnName="ID_Cliente" />
+          <ScalarProperty Name="Nombre_Cliente" ColumnName="Nombre_Cliente" />
+          <ScalarProperty Name="Apellido1_Cliente" ColumnName="Apellido1_Cliente" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="N__de_Cedula" ColumnName="N° de Cedula" />
+          <ScalarProperty Name="Telefono_Celular" ColumnName="Telefono_Celular" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="ID_Municipio" ColumnName="ID_Municipio" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CatDepartamento">
+      <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.CatDepartamento">
+        <MappingFragment StoreEntitySet="CatDepartamento">
+          <ScalarProperty Name="ID_Departamento" ColumnName="ID_Departamento" />
+          <ScalarProperty Name="Nombre_Depto" ColumnName="Nombre_Depto" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CatEmpleado">
+      <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.CatEmpleado">
+        <MappingFragment StoreEntitySet="CatEmpleado">
+          <ScalarProperty Name="IDEmpleado" ColumnName="IDEmpleado" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido1" ColumnName="Apellido1" />
+          <ScalarProperty Name="Apellido2" ColumnName="Apellido2" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="E_Mail" ColumnName="E-Mail" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="ImgEmpleado" ColumnName="ImgEmpleado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CatMarca">
+      <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.CatMarca">
+        <MappingFragment StoreEntitySet="CatMarca">
+          <ScalarProperty Name="IDMarca" ColumnName="IDMarca" />
+          <ScalarProperty Name="Nombre_Marca" ColumnName="Nombre_Marca" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CatMunicipio">
+      <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.CatMunicipio">
+        <MappingFragment StoreEntitySet="CatMunicipio">
+          <ScalarProperty Name="ID_Municipio" ColumnName="ID_Municipio" />
+          <ScalarProperty Name="Nombre_Municipio" ColumnName="Nombre_Municipio" />
+          <ScalarProperty Name="ID_Departamento" ColumnName="ID_Departamento" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CatProveedor">
+      <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.CatProveedor">
+        <MappingFragment StoreEntitySet="CatProveedor">
+          <ScalarProperty Name="ID_Proveedor" ColumnName="ID_Proveedor" />
+          <ScalarProperty Name="Nombre_Proveedor" ColumnName="Nombre_Proveedor" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="RutaLogo" ColumnName="RutaLogo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CatUsuario">
+      <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.CatUsuario">
+        <MappingFragment StoreEntitySet="CatUsuario">
+          <ScalarProperty Name="ID_Usuario" ColumnName="ID_Usuario" />
+          <ScalarProperty Name="Nombre_User" ColumnName="Nombre_User" />
+          <ScalarProperty Name="Apellido1_User" ColumnName="Apellido1_User" />
+          <ScalarProperty Name="Apellido2_User" ColumnName="Apellido2_User" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Tipo_Usuario" ColumnName="Tipo_Usuario" />
+          <ScalarProperty Name="ImgUser" ColumnName="ImgUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Empresa">
+      <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.Empresa">
+        <MappingFragment StoreEntitySet="Empresa">
+          <ScalarProperty Name="ID_Informacion" ColumnName="ID_Informacion" />
+          <ScalarProperty Name="Nombre_Empresa" ColumnName="Nombre_Empresa" />
+          <ScalarProperty Name="Propietario" ColumnName="Propietario" />
+          <ScalarProperty Name="Admonistrador" ColumnName="Admonistrador" />
+          <ScalarProperty Name="Ubicacion" ColumnName="Ubicacion" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Municipio" ColumnName="Municipio" />
+          <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="CambioDolar" ColumnName="CambioDolar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAbono_Cliente">
+      <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.tblAbono_Cliente">
+        <MappingFragment StoreEntitySet="tblAbono_Cliente">
+          <ScalarProperty Name="ID_VentaCredito" ColumnName="ID_VentaCredito" />
+          <ScalarProperty Name="Fecha_Abono" ColumnName="Fecha_Abono" />
+          <ScalarProperty Name="Monto_Abono" ColumnName="Monto_Abono" />
+          <ScalarProperty Name="Mora" ColumnName="Mora" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblArticulo_Bodega">
+      <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.tblArticulo_Bodega">
+        <MappingFragment StoreEntitySet="tblArticulo_Bodega">
+          <ScalarProperty Name="ID_BodegaArticulo" ColumnName="ID_BodegaArticulo" />
+          <ScalarProperty Name="ID_Articulo" ColumnName="ID_Articulo" />
+          <ScalarProperty Name="ID_Bodega" ColumnName="ID_Bodega" />
+          <ScalarProperty Name="Precio_Compra" ColumnName="Precio_Compra" />
+          <ScalarProperty Name="Precion_Venta" ColumnName="Precion_Venta" />
+          <ScalarProperty Name="Existencia" ColumnName="Existencia" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCompra">
+      <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.tblCompra">
+        <MappingFragment StoreEntitySet="tblCompra">
+          <ScalarProperty Name="ID_Compra" ColumnName="ID_Compra" />
+          <ScalarProperty Name="Fecha_Compra" ColumnName="Fecha_Compra" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDetalleCompra">
+      <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.tblDetalleCompra">
+        <MappingFragment StoreEntitySet="tblDetalleCompra">
+          <ScalarProperty Name="ID_DetalleCompra" ColumnName="ID_DetalleCompra" />
+          <ScalarProperty Name="ID_Compra" ColumnName="ID_Compra" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="ID_Articulo" ColumnName="ID_Articulo" />
+          <ScalarProperty Name="Precio_Compra" ColumnName="Precio_Compra" />
+          <ScalarProperty Name="Precio_Venta" ColumnName="Precio_Venta" />
+          <ScalarProperty Name="ID_Proveedor" ColumnName="ID_Proveedor" />
+          <ScalarProperty Name="ID_Bodega" ColumnName="ID_Bodega" />
+          <ScalarProperty Name="ID_Marca" ColumnName="ID_Marca" />
+          <ScalarProperty Name="Fecha_Entrega" ColumnName="Fecha_Entrega" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDetalleCpaTemp">
+      <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.tblDetalleCpaTemp">
+        <MappingFragment StoreEntitySet="tblDetalleCpaTemp">
+          <ScalarProperty Name="ID_ComraTmp" ColumnName="ID_ComraTmp" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="ID_Articulo" ColumnName="ID_Articulo" />
+          <ScalarProperty Name="Precio_Compra" ColumnName="Precio_Compra" />
+          <ScalarProperty Name="Precio_Venta" ColumnName="Precio_Venta" />
+          <ScalarProperty Name="ID_Proveedor" ColumnName="ID_Proveedor" />
+          <ScalarProperty Name="ID_Bodega" ColumnName="ID_Bodega" />
+          <ScalarProperty Name="ID_Marca" ColumnName="ID_Marca" />
+          <ScalarProperty Name="Fecha_Entrega" ColumnName="Fecha_Entrega" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDetalleVenta">
+      <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.tblDetalleVenta">
+        <MappingFragment StoreEntitySet="tblDetalleVenta">
+          <ScalarProperty Name="ID_DetalleVenta" ColumnName="ID_DetalleVenta" />
+          <ScalarProperty Name="ID_Articulo" ColumnName="ID_Articulo" />
+          <ScalarProperty Name="ID_Venta" ColumnName="ID_Venta" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Descuento" ColumnName="Descuento" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Garantia" ColumnName="Garantia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDetalleVtaTemp">
+      <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.tblDetalleVtaTemp">
+        <MappingFragment StoreEntitySet="tblDetalleVtaTemp">
+          <ScalarProperty Name="ID_DetalleTemp" ColumnName="ID_DetalleTemp" />
+          <ScalarProperty Name="ID_Articulo" ColumnName="ID_Articulo" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Descuento" ColumnName="Descuento" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Garantia" ColumnName="Garantia" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPedidos">
+      <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.tblPedidos">
+        <MappingFragment StoreEntitySet="tblPedidos">
+          <ScalarProperty Name="ID_Compra" ColumnName="ID_Compra" />
+          <ScalarProperty Name="Fecha_Compra" ColumnName="Fecha_Compra" />
+          <ScalarProperty Name="Fecha_Recepcion" ColumnName="Fecha_Recepcion" />
+          <ScalarProperty Name="Sub_Total" ColumnName="Sub-Total" />
+          <ScalarProperty Name="IVA" ColumnName="IVA" />
+          <ScalarProperty Name="Descuento" ColumnName="Descuento" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Pendiente_Aprobacion" ColumnName="Pendiente_Aprobacion" />
+          <ScalarProperty Name="ID_Proveedor" ColumnName="ID_Proveedor" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblVenta">
+      <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.tblVenta">
+        <MappingFragment StoreEntitySet="tblVenta">
+          <ScalarProperty Name="ID_Venta" ColumnName="ID_Venta" />
+          <ScalarProperty Name="Fecha_Vta" ColumnName="Fecha_Vta" />
+          <ScalarProperty Name="ID_Cliente" ColumnName="ID_Cliente" />
+          <ScalarProperty Name="ID_Usuario" ColumnName="ID_Usuario" />
+          <ScalarProperty Name="NombreCliente" ColumnName="NombreCliente" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Anulada" ColumnName="Anulada" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblVentaCredito">
+      <EntityTypeMapping TypeName="Respaldo_PulperiaChinaModel.tblVentaCredito">
+        <MappingFragment StoreEntitySet="tblVentaCredito">
+          <ScalarProperty Name="ID_Venta" ColumnName="ID_Venta" />
+          <ScalarProperty Name="ID_Cliente" ColumnName="ID_Cliente" />
+          <ScalarProperty Name="ID_Articulo" ColumnName="ID_Articulo" />
+          <ScalarProperty Name="Feche_Venta" ColumnName="Feche_Venta" />
+          <ScalarProperty Name="Plazos" ColumnName="Plazos" />
+          <ScalarProperty Name="Prima" ColumnName="Prima" />
+          <ScalarProperty Name="Interes" ColumnName="Interes" />
+          <ScalarProperty Name="Descuento" ColumnName="Descuento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
