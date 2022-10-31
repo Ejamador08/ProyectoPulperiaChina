@@ -47,5 +47,6 @@ namespace CapaDatos
         public DbSet<tblPedidos> tblPedidos { get; set; }
         public DbSet<tblVenta> tblVenta { get; set; }
         public DbSet<tblVentaCredito> tblVentaCredito { get; set; }
+        public DbSet<tblUsuarios> tblUsuarios { get; set; }
     }
 }
