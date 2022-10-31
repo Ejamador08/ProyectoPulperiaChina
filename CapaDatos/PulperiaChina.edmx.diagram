@@ -42,6 +42,7 @@
         <AssociationConnector Association="Respaldo_PulperiaChinaModel.FK_tblAbono_tblVentaCredito" ManuallyRouted="false" />
         <AssociationConnector Association="Respaldo_PulperiaChinaModel.FK_tblAbono_tblVentaCredito1" ManuallyRouted="false" />
         <AssociationConnector Association="Respaldo_PulperiaChinaModel.FK_tblDetalleVenta_tblVenta" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Respaldo_PulperiaChinaModel.tblUsuarios" Width="1.5" PointX="13.375" PointY="11.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
