@@ -83,6 +83,7 @@
       <End Role="tblVenta" EntitySet="tblVenta" />
       <End Role="tblDetalleVenta" EntitySet="tblDetalleVenta" />
     </AssociationSet>
+    <EntitySet Name="tblUsuarios" EntityType="Respaldo_PulperiaChinaModel.tblUsuarios" />
   </EntityContainer>
   <EntityType Name="CatArticulo">
     <Key>
@@ -562,4 +563,15 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <EntityType Name="tblUsuarios">
+    <Key>
+      <PropertyRef Name="IDUsuario" />
+    </Key>
+    <Property Name="IDUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombres" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Apellidos" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Usuario" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Contrasenia" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="String" Nullable="false" MaxLength="2" FixedLength="true" Unicode="false" />
+  </EntityType>
 </Schema>

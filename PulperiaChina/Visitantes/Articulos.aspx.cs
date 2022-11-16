@@ -384,6 +384,7 @@ namespace PulperiaChina.Visitantes
                 GridViewRow pagerRow = GridViewArticulo.BottomPagerRow;
                 // Recupera los controles DropDownList y label...
                 DropDownList pageList = (DropDownList)pagerRow.Cells[0].FindControl("DropArto");
+
                 Label pageLabel = (Label)pagerRow.Cells[0].FindControl("lblArtoPageOf");
                 if ((pageList != null))
                 {

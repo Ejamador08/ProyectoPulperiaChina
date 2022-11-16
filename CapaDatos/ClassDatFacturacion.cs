@@ -104,7 +104,7 @@ namespace CapaDatos
 
                 tblDetalleVtaTemp detalle = new tblDetalleVtaTemp();
 
-                if (!context.tblDetalleVtaTemp.Any(x=>x.ID_Articulo==temp.ID_Articulo))
+                if (!context.tblDetalleVtaTemp.Any(x => x.ID_Articulo == temp.ID_Articulo))
                 {
                     detalle.ID_Articulo = temp.ID_Articulo;
                     detalle.Estado = temp.Estado;
@@ -125,18 +125,6 @@ namespace CapaDatos
                 }
                 context.SaveChanges();
                 return true;
-
-                //este funciona con el del profesor
-                //detalle.ID_DetalleTemp = temp.ID_DetalleTemp;
-                //detalle.ID_Articulo = temp.ID_Articulo;
-                //detalle.SubTotal = temp.SubTotal;
-                //detalle.Estado = temp.Estado;
-                //detalle.Descuento = temp.Descuento;
-                //detalle.Precio = temp.Precio;
-                //detalle.Cantidad = temp.Cantidad;
-                //detalle.UserName = temp.UserName;
-                //context.tblDetalleVtaTemp.Add(detalle);
-                //context.SaveChanges();
             }
             catch (Exception)
             {
@@ -198,7 +186,7 @@ namespace CapaDatos
         }
         #endregion
 
-        #region Elimina Articulo en la tblDetalleVtaTemp
+        
         //Eliminar un producto de la temporal
         public bool EliminaTemp(int idart)
         {

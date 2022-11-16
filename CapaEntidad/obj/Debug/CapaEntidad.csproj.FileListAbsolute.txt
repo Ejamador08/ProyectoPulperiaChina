@@ -92,3 +92,11 @@ C:\Users\PROGRAMACION\Documents\Proyecto Pulperia China\CapaEntidad\obj\Debug\Ca
 C:\Users\PROGRAMACION\Documents\Proyecto Pulperia China\CapaEntidad\obj\Debug\CapaEntidad.csproj.CopyComplete
 C:\Users\PROGRAMACION\Documents\Proyecto Pulperia China\CapaEntidad\obj\Debug\CapaEntidad.dll
 C:\Users\PROGRAMACION\Documents\Proyecto Pulperia China\CapaEntidad\obj\Debug\CapaEntidad.pdb
+C:\Users\PROGRAMACION\Documents\ProyectoPulperiaChina\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\PROGRAMACION\Documents\ProyectoPulperiaChina\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\PROGRAMACION\Documents\ProyectoPulperiaChina\CapaEntidad\bin\Debug\AjaxControlToolkit.dll
+C:\Users\PROGRAMACION\Documents\ProyectoPulperiaChina\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+C:\Users\PROGRAMACION\Documents\ProyectoPulperiaChina\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\Users\PROGRAMACION\Documents\ProyectoPulperiaChina\CapaEntidad\obj\Debug\CapaEntidad.csproj.CopyComplete
+C:\Users\PROGRAMACION\Documents\ProyectoPulperiaChina\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\PROGRAMACION\Documents\ProyectoPulperiaChina\CapaEntidad\obj\Debug\CapaEntidad.pdb

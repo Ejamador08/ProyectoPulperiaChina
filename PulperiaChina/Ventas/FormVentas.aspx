@@ -45,6 +45,8 @@
             <center><h1 style="font-family:Arial, sans-serif;">Facturación de Artículos</h1></center>
             <h4>Información de la Factura</h4>
             <hr />
+
+
             <div class="container">
                 <div class="row">
                     <div class="col-md-2"></div>
@@ -69,6 +71,8 @@
                     <div class="col-md-2"></div>
                 </div>
             </div>
+
+
             <br />
             <hr />
             <div class="container">
@@ -110,10 +114,19 @@
                     </div>
                 </div>
             </div>
+
+
+
+
+
             <div class="col-md-12">
                 <br />
                 <br />
             </div>
+
+
+
+
             <div class="col-md-12">
                 <%--<div class="col-md-1"></div>--%>
                 <div class="col-md-2">
@@ -145,10 +158,15 @@
                     </div>
                 </div>
             </div>
+
+
+
             <div class="col-md-12">
                 <br />
                 <hr />
             </div>
+
+
             <center><h1><i class="glyphicon glyphicon-list"> Detalle de la Factura</i></h1></center>
             <asp:GridView ID="GridViewDetalle" CssClass="table table-bordered" AutoGenerateColumns="False" 
                 OnRowCommand="GridViewDetalle_RowCommand" DataKeyNames="ID_DetalleTemp" OnRowDataBound="GridViewDetalle_RowDataBound"
@@ -185,6 +203,8 @@
                     </asp:TemplateField>
                 </Columns>
             </asp:GridView>
+
+
             <br />
             <br />
             <h1 style="margin-left:40%;">Detalle de la venta</h1>
@@ -193,6 +213,7 @@
                 <br />
                 <br />
             </div>
+
             <asp:UpdatePanel ID="UDPago" runat="server">
                 <ContentTemplate>
                     <div class="col-md-12">

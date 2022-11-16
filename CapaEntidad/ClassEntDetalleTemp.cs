@@ -24,6 +24,5 @@ namespace CapaEntidad
         public Nullable<int> ID_Venta { get; set; }
         public string NombreCliente { get; set; }
         public Nullable<float> precioventa { get; set; }
-        //public string garantia { get; set; }
     }
 }

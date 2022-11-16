@@ -141,6 +141,9 @@
     <Compile Include="tblPedidos.cs">
       <DependentUpon>PulperiaChina.tt</DependentUpon>
     </Compile>
+    <Compile Include="tblUsuarios.cs">
+      <DependentUpon>PulperiaChina.tt</DependentUpon>
+    </Compile>
     <Compile Include="tblVenta.cs">
       <DependentUpon>PulperiaChina.tt</DependentUpon>
     </Compile>

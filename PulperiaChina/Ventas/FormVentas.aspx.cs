@@ -143,12 +143,9 @@ namespace PulperiaChina.Ventas
 
             var articulo = tmp.MuestraTmp(user);
 
-            //string.Format("C$: {0:0.00}", );
             txttotalventa.Text = articulo.Sum(sub => sub.SubTotal).ToString();
             txtdescapli.Text = string.Format("C$: {0:0.00}", articulo.Sum(sa => sa.Descuento)).ToString();
 
-          //  GridViewDetalle.DataSource = articulo;
-          //  GridViewDetalle.DataBind();
 
             foreach (var item in articulo)
             {

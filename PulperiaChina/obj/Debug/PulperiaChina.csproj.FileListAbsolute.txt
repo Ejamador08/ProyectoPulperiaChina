@@ -352,3 +352,23 @@ C:\Users\PROGRAMACION\Documents\Proyecto Pulperia China\PulperiaChina\obj\Debug\
 C:\Users\PROGRAMACION\Documents\Proyecto Pulperia China\PulperiaChina\obj\Debug\PulperiaChina.csproj.CopyComplete
 C:\Users\PROGRAMACION\Documents\Proyecto Pulperia China\PulperiaChina\obj\Debug\PulperiaChina.dll
 C:\Users\PROGRAMACION\Documents\Proyecto Pulperia China\PulperiaChina\obj\Debug\PulperiaChina.pdb
+C:\Users\PROGRAMACION\Documents\ProyectoPulperiaChina\PulperiaChina\bin\PulperiaChina.dll.config
+C:\Users\PROGRAMACION\Documents\ProyectoPulperiaChina\PulperiaChina\bin\PulperiaChina.dll
+C:\Users\PROGRAMACION\Documents\ProyectoPulperiaChina\PulperiaChina\bin\PulperiaChina.pdb
+C:\Users\PROGRAMACION\Documents\ProyectoPulperiaChina\PulperiaChina\bin\AjaxControlToolkit.dll
+C:\Users\PROGRAMACION\Documents\ProyectoPulperiaChina\PulperiaChina\bin\CapaEntidad.dll
+C:\Users\PROGRAMACION\Documents\ProyectoPulperiaChina\PulperiaChina\bin\CapaNegocio.dll
+C:\Users\PROGRAMACION\Documents\ProyectoPulperiaChina\PulperiaChina\bin\CapaDatos.dll
+C:\Users\PROGRAMACION\Documents\ProyectoPulperiaChina\PulperiaChina\bin\EntityFramework.dll
+C:\Users\PROGRAMACION\Documents\ProyectoPulperiaChina\PulperiaChina\bin\Microsoft.SqlServer.Types.dll
+C:\Users\PROGRAMACION\Documents\ProyectoPulperiaChina\PulperiaChina\bin\CapaEntidad.pdb
+C:\Users\PROGRAMACION\Documents\ProyectoPulperiaChina\PulperiaChina\bin\CapaNegocio.pdb
+C:\Users\PROGRAMACION\Documents\ProyectoPulperiaChina\PulperiaChina\bin\CapaDatos.pdb
+C:\Users\PROGRAMACION\Documents\ProyectoPulperiaChina\PulperiaChina\bin\CapaDatos.dll.config
+C:\Users\PROGRAMACION\Documents\ProyectoPulperiaChina\PulperiaChina\bin\EntityFramework.xml
+C:\Users\PROGRAMACION\Documents\ProyectoPulperiaChina\PulperiaChina\bin\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\PROGRAMACION\Documents\ProyectoPulperiaChina\PulperiaChina\obj\Debug\PulperiaChina.csproj.AssemblyReference.cache
+C:\Users\PROGRAMACION\Documents\ProyectoPulperiaChina\PulperiaChina\obj\Debug\PulperiaChina.csproj.CoreCompileInputs.cache
+C:\Users\PROGRAMACION\Documents\ProyectoPulperiaChina\PulperiaChina\obj\Debug\PulperiaChina.csproj.CopyComplete
+C:\Users\PROGRAMACION\Documents\ProyectoPulperiaChina\PulperiaChina\obj\Debug\PulperiaChina.dll
+C:\Users\PROGRAMACION\Documents\ProyectoPulperiaChina\PulperiaChina\obj\Debug\PulperiaChina.pdb
